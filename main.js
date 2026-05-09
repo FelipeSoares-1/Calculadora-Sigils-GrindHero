@@ -100,8 +100,15 @@
         btnControls.append(btnMinus, btnPlus);
 
         card.append(img, ov, sws, cost, btnControls);
-        // O card inteiro agora apenas foca no sigil. Os botões + e - alteram o nível.
-        card.addEventListener('click', e => { e.preventDefault(); showPanel(nome); });
+        // No PC (mouse), o clique esquerdo sobe o nível. No celular (touch), apenas seleciona.
+        card.addEventListener('click', e => { 
+          e.preventDefault(); 
+          if (window.matchMedia("(pointer: fine)").matches) {
+            levelUp(nome);
+          } else {
+            showPanel(nome); 
+          }
+        });
         // Mantemos o clique direito como atalho para descer o nível (opcional, mais para desktop)
         card.addEventListener('contextmenu', e => { e.preventDefault(); levelDown(nome); });
         grid.appendChild(card);
