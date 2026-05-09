@@ -56,6 +56,8 @@
     // ESTADO  (nivel: -1 = inativo, 0-5 = ativo)
     // ══════════════════════════════════════
     const state = {};
+    const baseState = {};
+    let isLocked = false;
     let selectedName = null;
 
     const fmt = n => n.toLocaleString('pt-BR');
@@ -67,6 +69,7 @@
       const grid = document.getElementById('grid');
       Object.keys(TABELA).sort().forEach(nome => {
         state[nome] = -1;
+        baseState[nome] = -1;
         const card = document.createElement('div');
         card.className = 'sigil-card';
         card.dataset.nome = nome;
@@ -123,13 +126,26 @@
       card.classList.toggle('active', n >= 0);
       card.querySelectorAll('.star').forEach((s, i) => s.classList.toggle('on', i < n));
       card.querySelector('.card-cost').textContent = n < 5 ? fmt(p[n + 1]) : 'MAX';
+      
+      const btnMinus = card.querySelector('.btn-control.minus');
+      if (btnMinus) {
+        const locked = isLocked && n <= baseState[nome];
+        btnMinus.style.opacity = locked ? '0.3' : '1';
+        btnMinus.style.cursor = locked ? 'not-allowed' : 'pointer';
+      }
     }
 
     // ══════════════════════════════════════
     // LÓGICA
     // ══════════════════════════════════════
     function levelUp(nome) { if (state[nome] < 5) state[nome]++; after(nome); }
-    function levelDown(nome) { if (state[nome] >= 0) state[nome]--; after(nome); }
+    function levelDown(nome) { 
+      if (state[nome] >= 0) {
+        if (isLocked && state[nome] <= baseState[nome]) return; // Impede descer do nível base
+        state[nome]--; 
+        after(nome); 
+      }
+    }
 
     function after(nome) {
       renderCard(nome);
@@ -142,7 +158,7 @@
     // STATS BAR
     // ══════════════════════════════════════
     function updateStats() {
-      let total = 0, ativos = 0, maxTotal = 0;
+      let total = 0, ativos = 0, maxTotal = 0, baseTotal = 0;
       Object.entries(state).forEach(([nome, n]) => {
         if (n >= 0) {
           ativos++;
@@ -151,8 +167,26 @@
           total += gasto;
           maxTotal += maxCost(nome);
         }
+        if (isLocked && baseState[nome] >= 0) {
+          const p = TABELA[nome];
+          const gastoBase = p.slice(0, baseState[nome] + 1).reduce((a, b) => a + b, 0);
+          baseTotal += gastoBase;
+        }
       });
-      document.getElementById('st-total').textContent = fmt(total);
+      
+      const cardUp = document.getElementById('card-upgrade');
+      if (isLocked) {
+        document.getElementById('st-total').textContent = fmt(baseTotal);
+        document.getElementById('st-total-sub').textContent = "na build travada";
+        document.getElementById('st-upgrade').textContent = fmt(total - baseTotal);
+        cardUp.style.display = 'flex';
+        cardUp.style.flexDirection = 'column';
+      } else {
+        document.getElementById('st-total').textContent = fmt(total);
+        document.getElementById('st-total-sub').textContent = "old coins totais";
+        cardUp.style.display = 'none';
+      }
+      
       document.getElementById('st-ativos').innerHTML =
         `${ativos} <span style="font-size:1.6rem;color:var(--muted)">/21</span>`;
       document.getElementById('st-maximo').textContent = ativos > 0 ? fmt(maxTotal) : '0';
@@ -280,10 +314,37 @@
     }
 
     // ══════════════════════════════════════
-    // RESET
+    // RESET & LOCK
     // ══════════════════════════════════════
+    document.getElementById('btn-lock').addEventListener('click', () => {
+      isLocked = !isLocked;
+      const btnLock = document.getElementById('btn-lock');
+      if (isLocked) {
+        Object.keys(state).forEach(k => baseState[k] = state[k]);
+        btnLock.innerHTML = '🔓 Destravar Build';
+        btnLock.style.color = '#fff';
+        btnLock.style.borderColor = '#fff';
+        btnLock.style.background = 'rgba(255, 255, 255, 0.15)';
+      } else {
+        Object.keys(state).forEach(k => baseState[k] = -1);
+        btnLock.innerHTML = '🔒 Travar Build Atual';
+        btnLock.style.color = 'var(--gold)';
+        btnLock.style.borderColor = 'var(--gold)';
+        btnLock.style.background = 'rgba(212, 175, 55, 0.15)';
+      }
+      Object.keys(state).forEach(k => renderCard(k));
+      updateStats();
+    });
+
     document.getElementById('btn-reset').addEventListener('click', () => {
-      Object.keys(state).forEach(k => { state[k] = -1; renderCard(k); });
+      isLocked = false;
+      const btnLock = document.getElementById('btn-lock');
+      btnLock.innerHTML = '🔒 Travar Build Atual';
+      btnLock.style.color = 'var(--gold)';
+      btnLock.style.borderColor = 'var(--gold)';
+      btnLock.style.background = 'rgba(212, 175, 55, 0.15)';
+      
+      Object.keys(state).forEach(k => { state[k] = -1; baseState[k] = -1; renderCard(k); });
       updateStats();
       updateSimList();
       document.getElementById('sel-name').textContent = 'Selecione um Sigil';

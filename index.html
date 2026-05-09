@@ -354,9 +354,9 @@
 
     .card-cost {
       position: absolute;
-      left: 59.375%;
+      left: 59%;
       /* 95 / 160 */
-      top: 91.304%;
+      top: 91%;
       /* 210 / 230 */
       transform: translate(-50%, -50%);
       font-family: var(--font-title);
@@ -837,14 +837,19 @@
       <div class="stat-card">
         <div class="stat-label">Custo Total</div>
         <div class="stat-value gold" id="st-total">0</div>
-        <div class="stat-sub">moedas gastas</div>
+        <div class="stat-sub" id="st-total-sub">old coins</div>
+      </div>
+      <div class="stat-card" id="card-upgrade" style="display:none; border-color: var(--gold);">
+        <div class="stat-label">Custo do Upgrade</div>
+        <div class="stat-value" style="color: #fff;" id="st-upgrade">0</div>
+        <div class="stat-sub">old coins necessários</div>
       </div>
       <div class="stat-card">
         <div class="stat-label">Sigils Ativos</div>
         <div class="stat-value" id="st-ativos">0 <span style="font-size:1.6rem;color:var(--muted)">/21</span></div>
         <div class="stat-sub">selecionados</div>
       </div>
-      <div class="stat-card">
+      <div class="stat-card" id="card-maximo">
         <div class="stat-label">Custo Máximo</div>
         <div class="stat-value red" id="st-maximo">0</div>
         <div class="stat-sub">para MAX selecionados</div>
@@ -928,8 +933,11 @@
         </div>
       </div>
 
-      <!-- BOTÃO RESET -->
+      <!-- BOTÕES DE AÇÃO -->
       <div class="reset-wrap">
+        <button class="btn-reset" id="btn-lock"
+          style="background: rgba(212, 175, 55, 0.15); border-color: var(--gold); color: var(--gold); margin-bottom: 1rem;">🔒
+          Travar Build Atual</button>
         <button class="btn-reset" id="btn-reset">Zerar Tudo</button>
       </div>
 
