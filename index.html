@@ -115,6 +115,12 @@
       width: auto;
       filter: drop-shadow(0 0 6px rgba(196, 18, 18, 0.6));
       animation: logoGlow 4s infinite alternate;
+      cursor: pointer;
+      transition: transform 0.2s, filter 0.2s;
+    }
+    .logo-img:hover {
+      transform: scale(1.08);
+      filter: drop-shadow(0 0 12px rgba(196, 18, 18, 0.9));
     }
 
     .header-titles {
@@ -831,7 +837,9 @@
   <!-- ══ HEADER ══ -->
   <header id="header">
     <div class="header-inner">
-      <img class="logo-img" src="red-skull-logo.png" alt="Red Skull" onerror="this.style.display='none'">
+      <a href="https://redskull.space/" target="_blank" rel="noopener noreferrer" title="Ir para o site oficial da Red Skull" style="display:flex;align-items:center;flex-shrink:0;">
+        <img class="logo-img" src="red-skull-logo.png" alt="Red Skull" onerror="this.style.display='none'">
+      </a>
       <div class="header-titles">
         <span class="header-main"><span>Calculadora</span> de Sigils</span>
         <span class="header-sub">Grind Hero</span>
@@ -958,8 +966,10 @@
     style="text-align: center; padding: 2rem; background: var(--dark); border-top: 1px solid var(--border); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; color: var(--dim);">
     <div>Calculadora de Sigils - Grind Hero</div>
     <div>Red Skull Guild</div>
-    <img src="red-skull-logo.webp" alt="Red Skull Logo"
-      style="width: 50px; height: auto; margin-top: 10px; filter: drop-shadow(0 0 5px rgba(196, 18, 18, 0.4));">
+    <a href="https://redskull.space/" target="_blank" rel="noopener noreferrer" title="Ir para o site oficial da Red Skull" style="display:flex;align-items:center;opacity:0.85;transition:opacity 0.2s;">
+      <img src="red-skull-logo.webp" alt="Red Skull Logo"
+        style="width: 50px; height: auto; filter: drop-shadow(0 0 5px rgba(196, 18, 18, 0.4));">
+    </a>
   </footer>
 
   <script src="main.obfuscated.js?v=2"></script>
