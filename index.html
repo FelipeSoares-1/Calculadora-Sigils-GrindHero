@@ -764,32 +764,47 @@
     ══════════════════════════════════ */
     .rs-popup {
       position: fixed;
-      bottom: 2.4rem;
-      right: 2.4rem;
+      top: 50%;
+      left: 50%;
       z-index: 999;
-      width: 320px;
+      width: 360px;
+      max-width: calc(100vw - 2rem);
       background: #111;
       border: 1px solid #1e1e1e;
-      border-left: 4px solid var(--red);
-      border-radius: 6px;
-      box-shadow: 0 8px 40px rgba(0,0,0,0.85), 0 0 24px rgba(196,18,18,0.15);
+      border-top: 4px solid var(--red);
+      border-radius: 8px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.9), 0 0 40px rgba(196,18,18,0.2);
       overflow: hidden;
-      /* estado inicial — fora da tela */
-      transform: translateY(120%) scale(0.95);
+      /* estado inicial — encolhido no centro */
+      transform: translate(-50%, -50%) scale(0.85);
       opacity: 0;
       transition: transform 0.45s cubic-bezier(0.34,1.56,0.64,1),
                   opacity 0.35s ease;
       pointer-events: none;
     }
     .rs-popup.show {
-      transform: translateY(0) scale(1);
+      transform: translate(-50%, -50%) scale(1);
       opacity: 1;
       pointer-events: auto;
     }
     .rs-popup.hide {
-      transform: translateY(120%) scale(0.95);
+      transform: translate(-50%, -50%) scale(0.85);
       opacity: 0;
       pointer-events: none;
+    }
+    /* Overlay escuro atrás do popup */
+    .rs-popup-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 998;
+      background: rgba(0,0,0,0.6);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.35s ease;
+    }
+    .rs-popup-overlay.show {
+      opacity: 1;
+      pointer-events: auto;
     }
 
     /* faixa vermelha de topo */
@@ -1106,6 +1121,7 @@
   <script src="main.obfuscated.js?v=2"></script>
 
   <!-- ══ POPUP RED SKULL ══ -->
+  <div class="rs-popup-overlay" id="rs-popup-overlay"></div>
   <div class="rs-popup" id="rs-popup" role="dialog" aria-label="Visite o site da Red Skull">
     <div class="rs-popup-bar"></div>
     <button class="rs-popup-close" id="rs-popup-close" title="Fechar" aria-label="Fechar">×</button>
@@ -1129,13 +1145,20 @@
       const POPUP_KEY   = 'rs_popup_dismissed_at';
       const COOLDOWN_MS = 5 * 60 * 1000; // 5 minutos
       const popup       = document.getElementById('rs-popup');
+      const overlay     = document.getElementById('rs-popup-overlay');
       const btnClose    = document.getElementById('rs-popup-close');
       const btnDismiss  = document.getElementById('rs-popup-dismiss');
       const btnVisit    = document.getElementById('rs-popup-visit');
 
+      function showPopup() {
+        overlay.classList.add('show');
+        popup.classList.add('show');
+      }
+
       function hidePopup() {
         popup.classList.remove('show');
         popup.classList.add('hide');
+        overlay.classList.remove('show');
         // Salva timestamp para reexibir após o cooldown
         localStorage.setItem(POPUP_KEY, Date.now().toString());
       }
@@ -1160,18 +1183,14 @@
       });
 
       if (shouldShow()) {
-        setTimeout(() => popup.classList.add('show'), 2500);
+        setTimeout(showPopup, 2500);
       }
 
       btnClose.addEventListener('click', hidePopup);
       btnDismiss.addEventListener('click', hidePopup);
 
-      // Fecha também ao clicar fora do popup
-      document.addEventListener('click', function (e) {
-        if (popup.classList.contains('show') && !popup.contains(e.target)) {
-          hidePopup();
-        }
-      });
+      // Fecha ao clicar no overlay
+      overlay.addEventListener('click', hidePopup);
     })();
   </script>
 </body>
