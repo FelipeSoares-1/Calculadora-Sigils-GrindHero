@@ -1117,7 +1117,7 @@
       </div>
     </div>
     <div class="rs-popup-footer">
-      <a class="rs-popup-btn primary" href="https://redskull.space/" target="_blank" rel="noopener noreferrer">
+      <a class="rs-popup-btn primary" id="rs-popup-visit" href="https://redskull.space/" target="_blank" rel="noopener noreferrer">
         ⚔ Visitar Site
       </a>
       <button class="rs-popup-btn dismiss" id="rs-popup-dismiss">Agora não</button>
@@ -1126,22 +1126,41 @@
 
   <script>
     (function () {
-      const POPUP_KEY = 'rs_popup_seen';
-      const popup     = document.getElementById('rs-popup');
-      const btnClose  = document.getElementById('rs-popup-close');
-      const btnDismiss = document.getElementById('rs-popup-dismiss');
+      const POPUP_KEY   = 'rs_popup_dismissed_at';
+      const COOLDOWN_MS = 5 * 60 * 1000; // 5 minutos
+      const popup       = document.getElementById('rs-popup');
+      const btnClose    = document.getElementById('rs-popup-close');
+      const btnDismiss  = document.getElementById('rs-popup-dismiss');
+      const btnVisit    = document.getElementById('rs-popup-visit');
 
       function hidePopup() {
         popup.classList.remove('show');
         popup.classList.add('hide');
-        sessionStorage.setItem(POPUP_KEY, '1');
+        // Salva timestamp para reexibir após o cooldown
+        localStorage.setItem(POPUP_KEY, Date.now().toString());
       }
 
-      // Só mostra uma vez por sessão
-      if (!sessionStorage.getItem(POPUP_KEY)) {
-        setTimeout(() => {
-          popup.classList.add('show');
-        }, 2500); // aparece 2.5s após carregar
+      function shouldShow() {
+        const last = localStorage.getItem(POPUP_KEY);
+        if (!last) return true; // nunca foi fechado
+        return (Date.now() - parseInt(last, 10)) >= COOLDOWN_MS;
+      }
+
+      // Dispara evento GA4 ao clicar em "Visitar Site"
+      btnVisit.addEventListener('click', function () {
+        if (typeof gtag === 'function') {
+          gtag('event', 'popup_visit_click', {
+            event_category: 'popup',
+            event_label: 'red_skull_site',
+            transport_type: 'beacon'
+          });
+        }
+        // Considera como "visto" — cooldown normal
+        hidePopup();
+      });
+
+      if (shouldShow()) {
+        setTimeout(() => popup.classList.add('show'), 2500);
       }
 
       btnClose.addEventListener('click', hidePopup);
