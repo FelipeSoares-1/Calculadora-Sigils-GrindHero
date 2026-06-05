@@ -1,0 +1,10 @@
+.git
+.github
+.claude
+*.exe
+main.js
+Sigil.py
+*.xlsx
+dist
+README.md
+ROADMAP.md
