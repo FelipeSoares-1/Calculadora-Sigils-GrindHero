@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+
+# Bots de IA — liberados explicitamente para GEO
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: GoogleExtendedBot
+Allow: /
+
+User-agent: Gemini
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+Sitemap: https://sigils.redskull.space/sitemap.xml
