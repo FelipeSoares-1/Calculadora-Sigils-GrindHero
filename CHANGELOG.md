@@ -35,4 +35,8 @@ PR: [#1 — Atualiza 26 Sigils com custos, bônus e ícones da wiki oficial](htt
 
 ### Estado de entrega
 
-Implementação enviada para a branch `codex/atualizacao-sigils-26`; PR pronto para revisão. Não foi realizado merge nem publicação em produção. Não houve instalação local do jogo. A execução gráfica Python/Tk ainda não foi validada; sua verificação nesta atualização limitou-se à compilação.
+Implementação enviada para a branch `codex/atualizacao-sigils-26`; PR pronto para revisão. Não foi realizado merge. O mantenedor informou que o deploy é automático via integração GitHub–Discloud quando a branch acompanhada é atualizada; a configuração dessa branch e o estado da publicação não foram verificados. Não houve instalação local do jogo. A execução gráfica Python/Tk ainda não foi validada; sua verificação nesta atualização limitou-se à compilação.
+
+### Correção do registro de publicação
+
+Em 13/10/2026, a documentação foi corrigida para refletir o deploy automático GitHub–Discloud e remover a orientação de upload manual. A afirmação anterior de ausência de publicação foi substituída pelo estado verificável: alterações enviadas à branch do PR, sem merge e sem confirmação do resultado do deploy.

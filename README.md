@@ -31,7 +31,9 @@ O build incorpora o JSON ao JavaScript ofuscado e gera dist/. A ofuscação não
 
 Para visualizar: python -m http.server 8765 --directory dist. Abrir http://localhost:8765.
 
-Para publicar: enviar o conteúdo de dist/ à hospedagem estática. Nenhuma requisição ao catálogo externo é necessária durante o uso. Uma atualização posterior deve revisar o catálogo oficial, substituir os dados e sprites necessários, atualizar a versão de cache do script no HTML e regenerar o build.
+O deploy é automático pelo Discloud integrado ao GitHub, conforme a configuração informada pelo mantenedor. Atualizações na branch acompanhada pela integração publicam o site, sem upload manual. O repositório contém `discloud.config` e `.discloudignore`; a branch acompanhada é configurada na integração externa e não está declarada nesses arquivos. Um push em outra branch não comprova publicação. Antes de atualizar a branch de deploy, gerar e versionar o bundle e a distribuição com `npm run build` e executar os testes.
+
+Nenhuma requisição ao catálogo externo é necessária durante o uso. Uma atualização posterior deve revisar o catálogo oficial, substituir os dados e sprites necessários, atualizar a versão de cache do script no HTML e regenerar o build.
 
 ## Desktop
 
