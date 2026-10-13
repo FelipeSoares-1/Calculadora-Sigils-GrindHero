@@ -25,8 +25,9 @@ HEX_BRANCO = "#ffffff"   # Cor branca para textos da interface
 import json
 with open(os.path.join(BASE_DIR, 'data', 'sigils.json'), encoding='utf-8') as catalog_file:
     CATALOGO = json.load(catalog_file)
-# A interface desktop legada requer seis preços e o card completo.
-SIGILS_DESKTOP = [s for s in CATALOGO['sigils'] if s['icon'] and None not in s['costs']]
+# Os 26 Sigils usam o catálogo e sprites oficiais.
+SIGILS_DESKTOP = CATALOGO['sigils']
+SIGILS_POR_NOME = {s['name']: s for s in SIGILS_DESKTOP}
 TABELA_VALORES = {s['name']: s['costs'] for s in SIGILS_DESKTOP}
 DESC_SIGILS = {s['name']: s['description'] for s in SIGILS_DESKTOP}
 
@@ -49,15 +50,19 @@ class SigilCard(ctk.CTkCanvas):
         except:
             self.font_custo = None
 
-        # Procura a imagem do ícone na pasta
-        img_path = os.path.join(PATH_SIGILS, f"{nome.replace(' ', '_')}.png")
-        if not os.path.exists(img_path): img_path = os.path.join(PATH_SIGILS, f"{nome}.png")
-
-        if os.path.exists(img_path):
-            self.img_base = Image.open(img_path).resize((self.w, self.h), Image.LANCZOS).convert("RGBA")
-            self.render()
-        else:
-            self.create_text(self.w/2, self.h/2, text=f"Erro:\n{nome}", fill="red")
+        # Compor o card sem deformar o sprite oficial.
+        self.img_base = Image.new("RGBA", (self.w, self.h), (16, 16, 20, 255))
+        draw = ImageDraw.Draw(self.img_base)
+        try:
+            name_font = ImageFont.truetype("arialbd.ttf", 15)
+        except OSError:
+            name_font = ImageFont.load_default()
+        draw.text((self.w // 2, 18), nome, fill=COR_DOURADO_PIL, font=name_font, anchor="mm")
+        img_path = os.path.join(BASE_DIR, SIGILS_POR_NOME[nome]['icon'])
+        icon = Image.open(img_path).convert("RGBA")
+        icon.thumbnail((96, 104), Image.Resampling.NEAREST)
+        self.img_base.alpha_composite(icon, ((self.w-icon.width)//2, 48+(104-icon.height)//2))
+        self.render()
 
         # Vincula os botões do mouse: Esquerdo (Subir Nível), Direito (Descer Nível)
         self.bind("<Button-1>", self.up)

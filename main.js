@@ -28,6 +28,7 @@ const lastAvailableRank = nome => TABELA[nome].findLastIndex(c => c != null);
         baseState[nome] = -1;
         const card = document.createElement('div');
         card.className = 'sigil-card';
+        card.setAttribute('aria-label', nome);
         card.dataset.nome = nome;
 
         const img = document.createElement('img');
@@ -60,7 +61,7 @@ const lastAvailableRank = nome => TABELA[nome].findLastIndex(c => c != null);
         btnControls.append(btnMinus, btnPlus);
 
         const label = document.createElement('span'); label.className = 'card-name'; label.textContent = nome;
-        label.hidden = Boolean(SIGILS[nome].icon);
+        label.hidden = false;
         card.append(img, label, ov, sws, cost, btnControls);
         // No PC (mouse), o clique esquerdo sobe o nível. No celular (touch), apenas seleciona.
         card.addEventListener('click', e => { 

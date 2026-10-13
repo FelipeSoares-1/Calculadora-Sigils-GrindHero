@@ -1090,6 +1090,11 @@
     .pending-icon { background: linear-gradient(145deg, #251d15, #0a0a0c); }
     .card-name { position: absolute; top: 34%; left: 5%; width: 90%; text-align: center; color: var(--gold); font-family: var(--font-title); font-size: 1.3rem; overflow-wrap: anywhere; }
     .pending-icon .card-stars { opacity: .35; }
+  /* Sprites oficiais independentes: texto, custo e estrelas são elementos da interface. */
+    .sigil-card .card-img { position: absolute; width: 62%; height: 48%; left: 19%; top: 17%; object-fit: contain; image-rendering: pixelated; }
+    .sigil-card .card-name { top: 5%; left: 4%; width: 92%; font-size: clamp(.8rem, 8cqi, 1.2rem); line-height: 1.15; z-index: 1; }
+    .sigil-card .card-cost { left: 50%; top: 91%; }
+    .data-notice a { color: inherit; text-decoration: underline; }
   </style>
 </head>
 
@@ -1111,7 +1116,7 @@
     </div>
   </header>
 
-  <p class="data-notice" role="status">Catálogo: 26 Sigils · build Steam 25728003. Novos Sigils: somente desbloqueio; estrelas, descrições e ícones oficiais aguardam validação. Custos por estrela dos 21 anteriores foram preservados. Naturalista: base corrigida para 10%; demais bônus a confirmar.</p>
+  <p class="data-notice">26 Sigils · Dados da <a href="https://grindhero.online/pt/wiki/sigils" target="_blank" rel="noopener noreferrer">wiki oficial do Grind Hero</a>, consultados em 13/10/2026.</p>
   <!-- ══ STATS BAR ══ -->
   <div class="stats-bar">
     <div class="stats-inner">
@@ -1238,7 +1243,7 @@
     </a>
   </footer>
 
-  <script src="main.obfuscated.js?v=4"></script>
+  <script src="main.obfuscated.js?v=5"></script>
 
   <!-- ══ POPUP RED SKULL ══ -->
   <div class="rs-popup-overlay" id="rs-popup-overlay"></div>
