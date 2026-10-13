@@ -36,6 +36,12 @@ const lastAvailableRank = nome => TABELA[nome].findLastIndex(c => c != null);
         if (SIGILS[nome].icon) img.src = SIGILS[nome].icon;
         else { img.hidden = true; card.classList.add('pending-icon'); }
         img.alt = nome; img.draggable = false;
+        const frame = document.createElement('img');
+        frame.className = 'card-frame'; frame.src = 'sigils_icons/Artesão.png';
+        frame.alt = ''; frame.draggable = false; frame.setAttribute('aria-hidden', 'true');
+        const coin = document.createElement('img');
+        coin.className = 'card-coin'; coin.src = 'sigils_icons/old-coin.png';
+        coin.alt = 'Moeda antiga'; coin.draggable = false;
 
         const ov = document.createElement('div'); ov.className = 'card-overlay';
         const sws = document.createElement('div'); sws.className = 'card-stars';
@@ -62,7 +68,7 @@ const lastAvailableRank = nome => TABELA[nome].findLastIndex(c => c != null);
 
         const label = document.createElement('span'); label.className = 'card-name'; label.textContent = nome;
         label.hidden = false;
-        card.append(img, label, ov, sws, cost, btnControls);
+        card.append(frame, img, label, ov, sws, coin, cost, btnControls);
         // No PC (mouse), o clique esquerdo sobe o nível. No celular (touch), apenas seleciona.
         card.addEventListener('click', e => { 
           e.preventDefault(); 

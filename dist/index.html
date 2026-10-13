@@ -1095,6 +1095,21 @@
     .sigil-card .card-name { top: 5%; left: 4%; width: 92%; font-size: clamp(.8rem, 8cqi, 1.2rem); line-height: 1.15; z-index: 1; }
     .sigil-card .card-cost { left: 50%; top: 91%; }
     .data-notice a { color: inherit; text-decoration: underline; }
+  /* Moldura original preservada; ícone, nome e moeda são elementos independentes. */
+    .sigil-card { aspect-ratio: 232 / 290; background: #3c3042; border: 1px solid #100b12; border-radius: 10px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.06); }
+    .card-frame { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; clip-path: polygon(evenodd, 17% 15%, 82% 15%, 82% 66%, 17% 66%, 17% 15%, 21% 19%, 21% 62%, 78% 62%, 78% 19%, 21% 19%); }
+    .sigil-card::before { content: ''; position: absolute; left: 21%; top: 19%; width: 57%; height: 43%; background: #29212e; }
+    .sigil-card .card-img { left: 22%; top: 21%; width: 55%; height: 39%; object-fit: contain; filter: brightness(0); }
+    .sigil-card.active .card-img { filter: none; }
+    .sigil-card .card-name { top: 5%; color: #fff; font-family: Arial, sans-serif; font-weight: 700; font-size: clamp(.7rem, 8cqi, 1.4rem); text-shadow: 1px 2px 2px #000; }
+    .sigil-card .star { top: 75%; filter: brightness(0); width: 22%; }
+    .sigil-card .star.on { filter: drop-shadow(0 0 3px rgba(255,205,80,.5)); }
+    .sigil-card .card-coin { position: absolute; left: 5%; top: 85%; width: 16%; height: 13%; object-fit: contain; image-rendering: pixelated; pointer-events: none; }
+    .sigil-card .card-cost { left: 59%; top: 92%; font-family: Arial, sans-serif; font-weight: 700; }
+    .sim-row-img { background-size: contain; background-position: center; }
+  .sigil-card { clip-path: polygon(3% 0, 97% 0, 100% 3%, 100% 97%, 97% 100%, 3% 100%, 0 97%, 0 3%); }
+    .sigil-card::after { content: ''; position: absolute; left: 3%; right: 3%; bottom: 0; height: 16%; background: linear-gradient(90deg, transparent, rgba(10,7,12,.55), transparent); pointer-events: none; }
+    .sigil-card .card-cost, .sigil-card .card-coin { z-index: 1; }
   </style>
 </head>
 
@@ -1116,7 +1131,6 @@
     </div>
   </header>
 
-  <p class="data-notice">26 Sigils · Dados da <a href="https://grindhero.online/pt/wiki/sigils" target="_blank" rel="noopener noreferrer">wiki oficial do Grind Hero</a>, consultados em 13/10/2026.</p>
   <!-- ══ STATS BAR ══ -->
   <div class="stats-bar">
     <div class="stats-inner">
@@ -1243,7 +1257,7 @@
     </a>
   </footer>
 
-  <script src="main.obfuscated.js?v=5"></script>
+  <script src="main.obfuscated.js?v=6"></script>
 
   <!-- ══ POPUP RED SKULL ══ -->
   <div class="rs-popup-overlay" id="rs-popup-overlay"></div>

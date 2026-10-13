@@ -45,3 +45,11 @@ Em 13/10/2026, a documentação foi corrigida para refletir o deploy automático
 
 Em 13/10/2026, o PR #1 foi integrado à branch principal master pelo commit e4722e1f78f3b9d96a1bb6fbb0a683942fa37898, a pedido do mantenedor. Após a integração, uma consulta HTTP sem cache a https://sigils.redskull.space/ confirmou o HTML com 26 Sigils e a referência ao bundle main.obfuscated.js?v=5. O deploy automático passou a entregar a atualização. Os estados de PR aberto/sem merge descritos acima são registros históricos anteriores à integração.
 
+## 2026-10-13 — Ajustes visuais conforme referência do jogo
+
+- Removido o aviso de origem e data do catálogo da interface; referências permanecem na documentação.
+- Restaurada a moldura metálica dos cards legados, reutilizada por CSS com os 26 sprites oficiais. Nome, estrelas, custo e moeda continuam independentes.
+- Sigils inativos exibem silhuetas; desbloqueados exibem as cores oficiais.
+- Moeda antiga substituída pelo sprite oficial do item 28: https://grindhero.online/game-data/icons/items/28.png.
+- Corrigido o enquadramento dos sprites na lista de simulação.
+- Build e três testes aprovados; cards conferidos visualmente no navegador antes do envio à master.
