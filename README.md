@@ -1,31 +1,42 @@
-# Grind Hero - Calculadora de Sigils (MII)
+# Grind Hero — Calculadora de Sigils
 
-Calculadora e simulador de custos para os **Sigils** do projeto Grind Hero (MII). Ferramenta desenvolvida para a **Red Skull Guild**, com interface responsiva, UX aprimorada e design temático dark/gold.
+Prévia de atualização para 26 Sigils, baseada na build Steam 25728003.
 
-## 🌟 Funcionalidades
-- **Simulação em Tempo Real:** Clique e simule o gasto em moedas para subir os níveis dos Sigils de 1 a 5 (e nível MAX).
-- **Indicadores Visuais:** Estrelas 3D reativas e cards interativos que destacam quais sigils estão selecionados.
-- **Painel de Status Global:** Monitoramento automático de total gasto, sigils ativos e quanto falta para atingir o máximo (Custo Total e Sigils Ativos / 21).
-- **Lista de Simulação Dinâmica:** Ranking automático dos sigils ativados ordenados por maior custo acumulado, ajudando a planejar gastos de forma inteligente.
-- **UX Otimizada para Mobile e Desktop:** Botões integrados aos cards, visíveis através do evento Hover/Touch para melhor acessibilidade sem poluição visual.
+## Estado dos dados
 
-## 🛠️ Tecnologias
-- **Frontend:** HTML5, CSS3, JavaScript Vanilla (Nenhum framework externo)
-- **Design System:** Baseado em variáveis CSS e flex/grid properties.
-- **Segurança (Ofuscação):** Os custos nativos e a lógica de nivelamento (`TABELA`) foram separados em `main.js` e ofuscados localmente gerando `main.obfuscated.js` utilizando *javascript-obfuscator*, provendo uma barreira técnica contra raspagem (scraping) da economia e cópia.
+- Os preços por estrela dos 21 Sigils anteriores foram preservados e ainda precisam de validação nativa.
+- Mana e Stamina: desbloqueio de 75 Old Coins, poder base de 2%.
+- Joalheiro: desbloqueio de 185, poder base 1, não percentual.
+- Negociador: desbloqueio de 200, poder base 10%.
+- Reparador: desbloqueio de 135, poder base 10, não percentual.
+- Os cinco novos permitem somente desbloqueio. Estrelas desconhecidas são null e aparecem como “A confirmar”. O custo máximo desconhecido não é exibido como zero.
+- Naturalista: base corrigida de 5% para 10%; bônus seguintes a confirmar. Preços antigos preservados.
+- Novos nomes em português, descrições, unidades numéricas e ícones oficiais aguardam conferência. Os novos cards usam texto provisório.
 
-## 🚀 Deploy e Uso
+## Catálogo único
 
-A aplicação é um front-end estático (Static Site). 
+data/sigils.json contém custos, bônus, descrições, ícones, IDs e estados de validação. Origem: grind-hero-analysis, commit 6979599e5775e9fca176c920535c50d84b36e1c3, extracted/sharedassets2.assets.gameplay.json.
 
-### Hospedagem (Hostinger)
-Os arquivos necessários para rodar o site em produção (`sigils.redskull.space`) são:
-- `index.html`
-- `main.obfuscated.js`
-- `estrela.webp` e logos
-- Diretório `/sigils_icons/`
+Dados estáticos do cliente não comprovam a configuração atual do servidor.
 
-> **Nota de Segurança:** Em produção, o arquivo fonte limpo `main.js` ou o original com `TABELA` exposta nunca devem ser enviados para a pasta `public_html`. O arquivo `main.obfuscated.js` possui toda a inteligência e lógica cifrada.
+## Desenvolvimento
 
----
-*Desenvolvido em nome da Red Skull Guild.*
+Requer Node.js 20 ou superior. Executar nesta ordem:
+
+```sh
+npm ci
+npm run build
+npm test
+```
+
+O build incorpora o catálogo ao JavaScript ofuscado e gera dist/. A ofuscação não torna os dados secretos. Não editar o bundle ou dist/ manualmente. A raiz e a distribuição carregam o mesmo bundle. Para visualizar, servir dist/ por um servidor HTTP estático.
+
+Depois de concluir a validação, publicar o conteúdo de dist/ e atualizar a versão de cache do script no HTML. Esta prévia não deve ser publicada como atualização integralmente validada.
+
+## Desktop
+
+Sigil.py consome o mesmo catálogo e corrige a divergência de Drenar Stamina. A interface desktop mantém os 21 cards completos; os cinco novos dependem da adaptação visual e dos preços por estrela. Dependências: customtkinter e Pillow.
+
+## Verificação
+
+npm test verifica fonte e bundle: 26 cards, IDs únicos, imagens existentes, bloqueio de estrelas desconhecidas, totais, máximos pendentes, unidades, Naturalista, travamento da build e reset. Não substitui comparação com o cliente e revisão visual em dispositivos reais.

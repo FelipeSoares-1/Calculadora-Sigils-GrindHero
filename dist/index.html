@@ -41,7 +41,7 @@
         "@id": "https://sigils.redskull.space/#app",
         "name": "Calculadora de Sigils — Grind Hero",
         "url": "https://sigils.redskull.space/",
-        "description": "Calculadora e simulador de custos dos Sigils do Grind Hero. Simula em tempo real o gasto em moedas para evoluir os 21 Sigils do nível 1 ao MAX, com ranking de gastos acumulados e painel de status global.",
+        "description": "Calculadora e simulador de custos dos Sigils do Grind Hero. Simula em tempo real o gasto em moedas para evoluir os 26 Sigils do nível 1 ao MAX, com ranking de gastos acumulados e painel de status global.",
         "applicationCategory": "GameApplication",
         "operatingSystem": "Web",
         "inLanguage": "pt-BR",
@@ -1086,6 +1086,10 @@
         border-color: var(--gold);
       }
     }
+  .data-notice { max-width: 1200px; margin: 1rem auto; padding: .8rem 1rem; color: var(--gold); line-height: 1.5; border: 1px solid var(--border); }
+    .pending-icon { background: linear-gradient(145deg, #251d15, #0a0a0c); }
+    .card-name { position: absolute; top: 34%; left: 5%; width: 90%; text-align: center; color: var(--gold); font-family: var(--font-title); font-size: 1.3rem; overflow-wrap: anywhere; }
+    .pending-icon .card-stars { opacity: .35; }
   </style>
 </head>
 
@@ -1107,6 +1111,7 @@
     </div>
   </header>
 
+  <p class="data-notice" role="status">Catálogo: 26 Sigils · build Steam 25728003. Novos Sigils: somente desbloqueio; estrelas, descrições e ícones oficiais aguardam validação. Custos por estrela dos 21 anteriores foram preservados. Naturalista: base corrigida para 10%; demais bônus a confirmar.</p>
   <!-- ══ STATS BAR ══ -->
   <div class="stats-bar">
     <div class="stats-inner">
@@ -1122,7 +1127,7 @@
       </div>
       <div class="stat-card">
         <div class="stat-label">Sigils Ativos</div>
-        <div class="stat-value" id="st-ativos">0 <span style="font-size:1.6rem;color:var(--muted)">/21</span></div>
+        <div class="stat-value" id="st-ativos">0 <span style="font-size:1.6rem;color:var(--muted)">/26</span></div>
         <div class="stat-sub">selecionados</div>
       </div>
       <div class="stat-card" id="card-maximo">
@@ -1233,7 +1238,7 @@
     </a>
   </footer>
 
-  <script src="main.js?v=3"></script>
+  <script src="main.obfuscated.js?v=4"></script>
 
   <!-- ══ POPUP RED SKULL ══ -->
   <div class="rs-popup-overlay" id="rs-popup-overlay"></div>

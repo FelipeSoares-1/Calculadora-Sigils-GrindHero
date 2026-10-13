@@ -22,54 +22,13 @@ HEX_DOURADO = "#facd67"  # Cor dourada para textos da interface
 HEX_BRANCO = "#ffffff"   # Cor branca para textos da interface
 
 # Tabela com os custos de evolução de cada Sigil (Nível 1 ao 6/MAX)
-TABELA_VALORES = {
-    "Agressão": [125, 250, 312, 375, 437, 500],
-    "Alquimista": [75, 150, 187, 225, 262, 300],
-    "Apressado": [45, 90, 112, 135, 158, 180],
-    "Artesão": [45, 90, 112, 135, 158, 180],
-    "Atleta": [145, 290, 362, 435, 508, 580],
-    "Drenar Mana": [225, 450, 562, 674, 787, 899],
-    "Drenar Stamina": [125, 250, 312, 375, 437, 500],
-    "Drenar Vida": [185, 370, 462, 555, 647, 740],
-    "Especialista": [125, 250, 312, 375, 437, 500],
-    "Esquiva": [125, 250, 312, 375, 437, 500],
-    "Ganância": [125, 250, 312, 375, 437, 500],
-    "Letalidade": [85, 170, 212, 255, 298, 340],
-    "Naturalista": [150, 300, 375, 450, 525, 600],
-    "Ousadia": [125, 250, 312, 375, 437, 500],
-    "Pacifista": [125, 250, 312, 375, 437, 500],
-    "Precisão": [105, 210, 262, 315, 368, 420],
-    "Proteção": [75, 150, 187, 225, 262, 300],
-    "Refletir": [125, 250, 312, 375, 437, 500],
-    "Sorte": [125, 250, 312, 375, 437, 500],
-    "Velocidade": [125, 250, 312, 375, 437, 500],
-    "Vida": [75, 150, 187, 225, 262, 300]
-}
-
-# Descrições que aparecem no painel lateral ao clicar
-DESC_SIGILS = {
-    "Agressão": "Causa um aumento nos ataques desferidos, tanto físico quanto mágico.",
-    "Alquimista": "Aumenta a potencia de suas porções, fazendo com que recuperem mais vida, mana e estamina do que o normal.",
-    "Apressado": "Reduz o tempo de cooldown (para usar habilidades de mesma categoria) de suas magias e itens, fazendo com que sejam lançadas mais rapidamente.",
-    "Artesão": "Aumenta a quantidade de itens produzidos em todas as magias de criaçao, como por exemplo, magias de criaçao de flechas.",
-    "Atleta": "Acelera a evoluçao de seus atributos(corpo a corpo, magia, distância, escudaria ou adestramento), fazendo com que eles subam de nível mais rapidamente.",
-    "Drenar Mana": "Seus ataques drenam uma quantia de pontos de mana de seu oponente para seus próprios pontos de mana.",
-    "Drenar Stamina": "Seus ataques drenam uma quantia de pontos de stamina de seu oponente para seus próprios pontos de stamina.",
-    "Drenar Vida": "Seus ataques drenam uma quantia de pontos de vida de seu oponente para seus próprios pontos de vida.",
-    "Especialista": "Acelera o ganho de experiência para evolução de seus itens, fazendo com que eles subam de nível mais rapidamente.",
-    "Esquiva": "Obtém a chance de se esquivar de ataques inimigos.",
-    "Ganância": "A quantidade de loot coletado será maior.",
-    "Letalidade": "Aumenta o total de dano causado por seus ataques críticos.",
-    "Naturalista": "Reduz o tempo de recuperação natural de seus pontos de vida, mana e stamina, fazendo que se regenere mais rapidamente.",
-    "Ousadia": "Aumenta a chance de provocar monstros em seus ataques. O valor é adicionado diretamente na habilidade no momento do ataque, por exemplo, se a habilidade possuir uma chance de provocar de 10% e o seu sigil tiver 2%, no total serão 12% de chance.",
-    "Pacifista": "Reduz a chance de provocar monstros em seus ataques. O valor é removido diretamente na habilidade no momento do ataque, por exemplo, se a habilidade possuir uma chance de provocar de 10% e o seu sigil tiver 2%, no total serão 8% de chance.",
-    "Precisão": "Aumenta a chance de acerto crítico e precisão de disparos.",
-    "Proteção": "Causa uma redução no dano recebido, tanto físico quanto mágico.",
-    "Refletir": "Sempre que receber um ataque, parte do dano será devolvido para aquele que desferiu o golpe.",
-    "Sorte": "Sua chance será maior para encontrar itens e loots em monstros.",
-    "Velocidade": "Causa um aumento na velocidade de movimento do personagem.",
-    "Vida": "Causa um aumento nos pontos de vida do personagem."
-}
+import json
+with open(os.path.join(BASE_DIR, 'data', 'sigils.json'), encoding='utf-8') as catalog_file:
+    CATALOGO = json.load(catalog_file)
+# A interface desktop legada requer seis preços e o card completo.
+SIGILS_DESKTOP = [s for s in CATALOGO['sigils'] if s['icon'] and None not in s['costs']]
+TABELA_VALORES = {s['name']: s['costs'] for s in SIGILS_DESKTOP}
+DESC_SIGILS = {s['name']: s['description'] for s in SIGILS_DESKTOP}
 
 # =====================================================
 # CLASSE DOS CARDS (ÍCONES INDIVIDUAIS)

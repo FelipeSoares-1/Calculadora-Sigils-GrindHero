@@ -1,0 +1,766 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "repository": "FelipeSoares-1/grind-hero-analysis",
+    "commit": "6979599e5775e9fca176c920535c50d84b36e1c3",
+    "steamBuild": 25728003,
+    "asset": "sharedassets2.assets",
+    "note": "Dados estáticos da build analisada. Estrelas antigas preservadas, ainda não revalidadas; novos Sigils disponíveis somente no desbloqueio."
+  },
+  "sigils": [
+    {
+      "id": 1,
+      "key": "life_leech",
+      "name": "Drenar Vida",
+      "description": "Seus ataques drenam uma quantia de pontos de vida de seu oponente para seus próprios pontos de vida.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        185,
+        370,
+        462,
+        555,
+        647,
+        740
+      ],
+      "bonuses": [
+        4.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Drenar_Vida.png",
+      "spritePathId": 54965,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "legacy-unverified-ranks"
+    },
+    {
+      "id": 2,
+      "key": "reflect",
+      "name": "Refletir",
+      "description": "Sempre que receber um ataque, parte do dano será devolvido para aquele que desferiu o golpe.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        125,
+        250,
+        312,
+        375,
+        437,
+        500
+      ],
+      "bonuses": [
+        4.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Refletir.png",
+      "spritePathId": 54990,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "legacy-unverified-ranks"
+    },
+    {
+      "id": 3,
+      "key": "protection",
+      "name": "Proteção",
+      "description": "Causa uma redução no dano recebido, tanto físico quanto mágico.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        75,
+        150,
+        187,
+        225,
+        262,
+        300
+      ],
+      "bonuses": [
+        2.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Proteção.png",
+      "spritePathId": 54857,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "legacy-unverified-ranks"
+    },
+    {
+      "id": 4,
+      "key": "aggression",
+      "name": "Agressão",
+      "description": "Causa um aumento nos ataques desferidos, tanto físico quanto mágico.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        125,
+        250,
+        312,
+        375,
+        437,
+        500
+      ],
+      "bonuses": [
+        2.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Agressão.png",
+      "spritePathId": 54905,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "legacy-unverified-ranks"
+    },
+    {
+      "id": 5,
+      "key": "velocity",
+      "name": "Velocidade",
+      "description": "Causa um aumento na velocidade de movimento do personagem.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        125,
+        250,
+        312,
+        375,
+        437,
+        500
+      ],
+      "bonuses": [
+        2.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Velocidade.png",
+      "spritePathId": 55061,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "legacy-unverified-ranks"
+    },
+    {
+      "id": 6,
+      "key": "life",
+      "name": "Vida",
+      "description": "Causa um aumento nos pontos de vida do personagem.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        75,
+        150,
+        187,
+        225,
+        262,
+        300
+      ],
+      "bonuses": [
+        2.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Vida.png",
+      "spritePathId": 54949,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "legacy-unverified-ranks"
+    },
+    {
+      "id": 7,
+      "key": "luck",
+      "name": "Sorte",
+      "description": "Sua chance será maior para encontrar itens e loots em monstros.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        125,
+        250,
+        312,
+        375,
+        437,
+        500
+      ],
+      "bonuses": [
+        4.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Sorte.png",
+      "spritePathId": 54933,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "legacy-unverified-ranks"
+    },
+    {
+      "id": 8,
+      "key": "greed",
+      "name": "Ganância",
+      "description": "A quantidade de loot coletado será maior.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        125,
+        250,
+        312,
+        375,
+        437,
+        500
+      ],
+      "bonuses": [
+        5.0,
+        10.0,
+        12.5,
+        15.0,
+        17.5,
+        20.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Ganância.png",
+      "spritePathId": 54822,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "legacy-unverified-ranks"
+    },
+    {
+      "id": 9,
+      "key": "dodge",
+      "name": "Esquiva",
+      "description": "Obtém a chance de se esquivar de ataques inimigos.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        125,
+        250,
+        312,
+        375,
+        437,
+        500
+      ],
+      "bonuses": [
+        2.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Esquiva.png",
+      "spritePathId": 54843,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "legacy-unverified-ranks"
+    },
+    {
+      "id": 10,
+      "key": "mana_leech",
+      "name": "Drenar Mana",
+      "description": "Seus ataques drenam uma quantia de pontos de mana de seu oponente para seus próprios pontos de mana.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        225,
+        450,
+        562,
+        674,
+        787,
+        899
+      ],
+      "bonuses": [
+        4.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Drenar_Mana.png",
+      "spritePathId": 54744,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "legacy-unverified-ranks"
+    },
+    {
+      "id": 11,
+      "key": "boldness",
+      "name": "Ousadia",
+      "description": "Aumenta a chance de provocar monstros em seus ataques. O valor é adicionado diretamente na habilidade no momento do ataque, por exemplo, se a habilidade possuir uma chance de provocar de 10% e o seu sigil tiver 2%, no total serão 12% de chance.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        125,
+        250,
+        312,
+        375,
+        437,
+        500
+      ],
+      "bonuses": [
+        3.0,
+        6.0,
+        7.5,
+        9.0,
+        10.5,
+        12.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Ousadia.png",
+      "spritePathId": 55050,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "legacy-unverified-ranks"
+    },
+    {
+      "id": 12,
+      "key": "pacifist",
+      "name": "Pacifista",
+      "description": "Reduz a chance de provocar monstros em seus ataques. O valor é removido diretamente na habilidade no momento do ataque, por exemplo, se a habilidade possuir uma chance de provocar de 10% e o seu sigil tiver 2%, no total serão 8% de chance.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        125,
+        250,
+        312,
+        375,
+        437,
+        500
+      ],
+      "bonuses": [
+        3.0,
+        6.0,
+        7.5,
+        9.0,
+        10.5,
+        12.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Pacifista.png",
+      "spritePathId": 54817,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "legacy-unverified-ranks"
+    },
+    {
+      "id": 13,
+      "key": "naturalist",
+      "name": "Naturalista",
+      "description": "Reduz o tempo de recuperação natural de seus pontos de vida, mana e stamina, fazendo que se regenere mais rapidamente.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        150,
+        300,
+        375,
+        450,
+        525,
+        600
+      ],
+      "bonuses": [
+        10.0,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Naturalista.png",
+      "spritePathId": 54623,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "base-only"
+    },
+    {
+      "id": 14,
+      "key": "artisan",
+      "name": "Artesão",
+      "description": "Aumenta a quantidade de itens produzidos em todas as magias de criação, como por exemplo, magias de criação de flechas.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        45,
+        90,
+        112,
+        135,
+        158,
+        180
+      ],
+      "bonuses": [
+        100.0,
+        200.0,
+        250.0,
+        300.0,
+        350.0,
+        400.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Artesão.png",
+      "spritePathId": 54815,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "legacy-unverified-ranks"
+    },
+    {
+      "id": 15,
+      "key": "rushed",
+      "name": "Apressado",
+      "description": "Reduz o tempo de cooldown (para usar habilidades de mesma categoria) de suas magias e itens, fazendo com que sejam lançadas mais rapidamente.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        45,
+        90,
+        112,
+        135,
+        158,
+        180
+      ],
+      "bonuses": [
+        20.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Apressado.png",
+      "spritePathId": 54810,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "legacy-unverified-ranks"
+    },
+    {
+      "id": 16,
+      "key": "stamina_leech",
+      "name": "Drenar Stamina",
+      "description": "Seus ataques drenam uma quantia de pontos de stamina de seu oponente para seus próprios pontos de stamina.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        185,
+        370,
+        462,
+        555,
+        648,
+        740
+      ],
+      "bonuses": [
+        1.0,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Drenar_Stamina.png",
+      "spritePathId": 54951,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "legacy-unverified-ranks"
+    },
+    {
+      "id": 17,
+      "key": "expert",
+      "name": "Especialista",
+      "description": "Acelera o ganho de experiência para evolução de seus itens, fazendo com que eles subam de nível mais rapidamente.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        125,
+        250,
+        312,
+        375,
+        437,
+        500
+      ],
+      "bonuses": [
+        75.0,
+        150.0,
+        187.5,
+        225.0,
+        262.5,
+        300.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Especialista.png",
+      "spritePathId": 54877,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "legacy-unverified-ranks"
+    },
+    {
+      "id": 18,
+      "key": "alchemist",
+      "name": "Alquimista",
+      "description": "Aumenta a potência de suas poções, fazendo com que recuperem mais vida, mana e estamina do que o normal.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        75,
+        150,
+        187,
+        225,
+        262,
+        300
+      ],
+      "bonuses": [
+        25.0,
+        50.0,
+        62.5,
+        75.0,
+        87.5,
+        100.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Alquimista.png",
+      "spritePathId": 54683,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "legacy-unverified-ranks"
+    },
+    {
+      "id": 19,
+      "key": "athlete",
+      "name": "Atleta",
+      "description": "Acelera a evolução de seus atributos (corpo a corpo, magia, distância, escudaria ou adestramento), fazendo com que eles subam de nível mais rapidamente.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        145,
+        290,
+        362,
+        435,
+        508,
+        580
+      ],
+      "bonuses": [
+        10.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        40.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Atleta.png",
+      "spritePathId": 54854,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "legacy-unverified-ranks"
+    },
+    {
+      "id": 20,
+      "key": "precision",
+      "name": "Precisão",
+      "description": "Aumenta a chance de acerto crítico e precisão de disparos.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        105,
+        210,
+        262,
+        315,
+        368,
+        420
+      ],
+      "bonuses": [
+        25.0,
+        50.0,
+        62.5,
+        75.0,
+        87.5,
+        100.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Precisão.png",
+      "spritePathId": 54963,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "legacy-unverified-ranks"
+    },
+    {
+      "id": 21,
+      "key": "lethality",
+      "name": "Letalidade",
+      "description": "Aumenta o total de dano causado por seus ataques críticos.",
+      "descriptionStatus": "legacy",
+      "nameStatus": "legacy",
+      "costs": [
+        85,
+        170,
+        212,
+        255,
+        298,
+        340
+      ],
+      "bonuses": [
+        25.0,
+        50.0,
+        62.5,
+        75.0,
+        87.5,
+        100.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/Letalidade.png",
+      "spritePathId": 54735,
+      "costStatus": "legacy-unverified-ranks",
+      "bonusStatus": "legacy-unverified-ranks"
+    },
+    {
+      "id": 22,
+      "key": "mana",
+      "name": "Mana",
+      "description": "Descrição e unidade aguardam conferência na localização oficial do jogo.",
+      "descriptionStatus": "pending",
+      "nameStatus": "legacy",
+      "costs": [
+        75,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "bonuses": [
+        2.0,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "isPercentage": true,
+      "icon": null,
+      "spritePathId": 54953,
+      "costStatus": "unlock-only",
+      "bonusStatus": "base-only"
+    },
+    {
+      "id": 23,
+      "key": "stamina",
+      "name": "Stamina",
+      "description": "Descrição e unidade aguardam conferência na localização oficial do jogo.",
+      "descriptionStatus": "pending",
+      "nameStatus": "legacy",
+      "costs": [
+        75,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "bonuses": [
+        2.0,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "isPercentage": true,
+      "icon": null,
+      "spritePathId": 54702,
+      "costStatus": "unlock-only",
+      "bonusStatus": "base-only"
+    },
+    {
+      "id": 24,
+      "key": "jeweler",
+      "name": "Joalheiro",
+      "description": "Descrição e unidade aguardam conferência na localização oficial do jogo.",
+      "descriptionStatus": "pending",
+      "nameStatus": "proposed",
+      "costs": [
+        185,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "bonuses": [
+        1.0,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "isPercentage": false,
+      "icon": null,
+      "spritePathId": 55001,
+      "costStatus": "unlock-only",
+      "bonusStatus": "base-only"
+    },
+    {
+      "id": 25,
+      "key": "negotiator",
+      "name": "Negociador",
+      "description": "Descrição e unidade aguardam conferência na localização oficial do jogo.",
+      "descriptionStatus": "pending",
+      "nameStatus": "proposed",
+      "costs": [
+        200,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "bonuses": [
+        10.0,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "isPercentage": true,
+      "icon": null,
+      "spritePathId": 54742,
+      "costStatus": "unlock-only",
+      "bonusStatus": "base-only"
+    },
+    {
+      "id": 26,
+      "key": "repairer",
+      "name": "Reparador",
+      "description": "Descrição e unidade aguardam conferência na localização oficial do jogo.",
+      "descriptionStatus": "pending",
+      "nameStatus": "proposed",
+      "costs": [
+        135,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "bonuses": [
+        10.0,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "isPercentage": false,
+      "icon": null,
+      "spritePathId": 54672,
+      "costStatus": "unlock-only",
+      "bonusStatus": "base-only"
+    }
+  ]
+}
