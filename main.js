@@ -1,81 +1,12 @@
-    // ══════════════════════════════════════
-    // DADOS
-    // ══════════════════════════════════════
-    const TABELA = {
-      "Agressão": [125, 250, 312, 375, 437, 500],
-      "Alquimista": [75, 150, 187, 225, 262, 300],
-      "Apressado": [45, 90, 112, 135, 158, 180],
-      "Artesão": [45, 90, 112, 135, 158, 180],
-      "Atleta": [145, 290, 362, 435, 508, 580],
-      "Drenar Mana": [225, 450, 562, 674, 787, 899],
-      "Drenar Stamina": [185, 370, 462, 555, 648, 740],
-      "Drenar Vida": [185, 370, 462, 555, 647, 740],
-      "Especialista": [125, 250, 312, 375, 437, 500],
-      "Esquiva": [125, 250, 312, 375, 437, 500],
-      "Ganância": [125, 250, 312, 375, 437, 500],
-      "Letalidade": [85, 170, 212, 255, 298, 340],
-      "Naturalista": [150, 300, 375, 450, 525, 600],
-      "Ousadia": [125, 250, 312, 375, 437, 500],
-      "Pacifista": [125, 250, 312, 375, 437, 500],
-      "Precisão": [105, 210, 262, 315, 368, 420],
-      "Proteção": [75, 150, 187, 225, 262, 300],
-      "Refletir": [125, 250, 312, 375, 437, 500],
-      "Sorte": [125, 250, 312, 375, 437, 500],
-      "Velocidade": [125, 250, 312, 375, 437, 500],
-      "Vida": [75, 150, 187, 225, 262, 300],
-    };
-
-    // bônus (%) concedido em cada nível: unlock, 1★, 2★, 3★, 4★, 5★
-    const BONUS = {
-      "Agressão":       ["2%", "4%", "5%", "6%", "7%", "8%"],
-      "Alquimista":     ["25%", "50%", "62,5%", "75%", "87,5%", "100%"],
-      "Apressado":      ["20%", "40%", "50%", "60%", "70%", "80%"],
-      "Artesão":        ["100%", "200%", "250%", "300%", "350%", "400%"],
-      "Atleta":         ["10%", "20%", "25%", "30%", "35%", "40%"],
-      "Drenar Mana":    ["4%", "8%", "10%", "12%", "14%", "16%"],
-      "Drenar Stamina": ["1%", "2%", "2,5%", "3%", "3,5%", "4%"],
-      "Drenar Vida":    ["4%", "8%", "10%", "12%", "14%", "16%"],
-      "Especialista":   ["75%", "150%", "187,5%", "225%", "262,5%", "300%"],
-      "Esquiva":        ["2%", "4%", "5%", "6%", "7%", "8%"],
-      "Ganância":       ["5%", "10%", "12,5%", "15%", "17,5%", "20%"],
-      "Letalidade":     ["25%", "50%", "62,5%", "75%", "87,5%", "100%"],
-      "Naturalista":    ["5%", "10%", "12,5%", "15%", "17,5%", "20%"],
-      "Ousadia":        ["3%", "6%", "7,5%", "9%", "10,5%", "12%"],
-      "Pacifista":      ["3%", "6%", "7,5%", "9%", "10,5%", "12%"],
-      "Precisão":       ["25%", "50%", "62,5%", "75%", "87,5%", "100%"],
-      "Proteção":       ["2%", "4%", "5%", "6%", "7%", "8%"],
-      "Refletir":       ["4%", "8%", "10%", "12%", "14%", "16%"],
-      "Sorte":          ["4%", "8%", "10%", "12%", "14%", "16%"],
-      "Velocidade":     ["2%", "4%", "5%", "6%", "7%", "8%"],
-      "Vida":           ["2%", "4%", "5%", "6%", "7%", "8%"],
-    };
-
-    const DESC = {
-      "Agressão": "Causa um aumento nos ataques desferidos, tanto físico quanto mágico.",
-      "Alquimista": "Aumenta a potencia de suas porções, fazendo com que recuperem mais vida, mana e estamina do que o normal.",
-      "Apressado": "Reduz o tempo de cooldown (para usar habilidades de mesma categoria) de suas magias e itens, fazendo com que sejam lançadas mais rapidamente.",
-      "Artesão": "Aumenta a quantidade de itens produzidos em todas as magias de criaçao, como por exemplo, magias de criaçao de flechas.",
-      "Atleta": "Acelera a evoluçao de seus atributos(corpo a corpo, magia, distância, escudaria ou adestramento), fazendo com que eles subam de nível mais rapidamente.",
-      "Drenar Mana": "Seus ataques drenam uma quantia de pontos de mana de seu oponente para seus próprios pontos de mana.",
-      "Drenar Stamina": "Seus ataques drenam uma quantia de pontos de stamina de seu oponente para seus próprios pontos de stamina.",
-      "Drenar Vida": "Seus ataques drenam uma quantia de pontos de vida de seu oponente para seus próprios pontos de vida.",
-      "Especialista": "Acelera o ganho de experiência para evolução de seus itens, fazendo com que eles subam de nível mais rapidamente.",
-      "Esquiva": "Obtém a chance de se esquivar de ataques inimigos.",
-      "Ganância": "A quantidade de loot coletado será maior.",
-      "Letalidade": "Aumenta o total de dano causado por seus ataques críticos.",
-      "Naturalista": "Reduz o tempo de recuperação natural de seus pontos de vida, mana e stamina, fazendo que se regenere mais rapidamente.",
-      "Ousadia": "Aumenta a chance de provocar monstros em seus ataques. O valor é adicionado diretamente na habilidade no momento do ataque, por exemplo, se a habilidade possuir uma chance de provocar de 10% e o seu sigil tiver 2%, no total serão 12% de chance.",
-      "Pacifista": "Reduz a chance de provocar monstros em seus ataques. O valor é removido diretamente na habilidade no momento do ataque, por exemplo, se a habilidade possuir uma chance de provocar de 10% e o seu sigil tiver 2%, no total serão 8% de chance.",
-      "Precisão": "Aumenta a chance de acerto crítico e precisão de disparos.",
-      "Proteção": "Causa uma redução no dano recebido, tanto físico quanto mágico.",
-      "Refletir": "Sempre que receber um ataque, parte do dano será devolvido para aquele que desferiu o golpe.",
-      "Sorte": "Sua chance será maior para encontrar itens e loots em monstros.",
-      "Velocidade": "Causa um aumento na velocidade de movimento do personagem.",
-      "Vida": "Causa um aumento nos pontos de vida do personagem."
-    };
+// Gerado a partir do catálogo único em data/sigils.json.
+const SIGILS = Object.fromEntries(SIGIL_CATALOG.sigils.map(s => [s.name, s]));
+const TABELA = Object.fromEntries(SIGIL_CATALOG.sigils.map(s => [s.name, s.costs]));
+const DESC = Object.fromEntries(SIGIL_CATALOG.sigils.map(s => [s.name, s.description]));
+const BONUS = Object.fromEntries(SIGIL_CATALOG.sigils.map(s => [s.name, s.bonuses.map(b => b == null ? 'A confirmar' : b.toLocaleString('pt-BR') + (s.isPercentage ? '%' : ''))]));
+const lastAvailableRank = nome => TABELA[nome].findLastIndex(c => c != null);
 
     // custo total máximo de cada sigil (soma de todos os 6 níveis)
-    function maxCost(nome) { return TABELA[nome].reduce((a, b) => a + b, 0); }
+    function maxCost(nome) { return TABELA[nome].includes(null) ? null : TABELA[nome].reduce((a, b) => a + b, 0); }
 
     // ══════════════════════════════════════
     // ESTADO  (nivel: -1 = inativo, 0-5 = ativo)
@@ -97,11 +28,13 @@
         baseState[nome] = -1;
         const card = document.createElement('div');
         card.className = 'sigil-card';
+        card.setAttribute('aria-label', nome);
         card.dataset.nome = nome;
 
         const img = document.createElement('img');
         img.className = 'card-img';
-        img.src = `sigils_icons/${nome.replace(/ /g, '_')}.png`;
+        if (SIGILS[nome].icon) img.src = SIGILS[nome].icon;
+        else { img.hidden = true; card.classList.add('pending-icon'); }
         img.alt = nome; img.draggable = false;
 
         const ov = document.createElement('div'); ov.className = 'card-overlay';
@@ -127,7 +60,9 @@
 
         btnControls.append(btnMinus, btnPlus);
 
-        card.append(img, ov, sws, cost, btnControls);
+        const label = document.createElement('span'); label.className = 'card-name'; label.textContent = nome;
+        label.hidden = false;
+        card.append(img, label, ov, sws, cost, btnControls);
         // No PC (mouse), o clique esquerdo sobe o nível. No celular (touch), apenas seleciona.
         card.addEventListener('click', e => { 
           e.preventDefault(); 
@@ -150,7 +85,7 @@
       const n = state[nome], p = TABELA[nome];
       card.classList.toggle('active', n >= 0);
       card.querySelectorAll('.star').forEach((s, i) => s.classList.toggle('on', i < n));
-      card.querySelector('.card-cost').textContent = n < 5 ? fmt(p[n + 1]) : 'MAX';
+      card.querySelector('.card-cost').textContent = n < lastAvailableRank(nome) ? fmt(p[n + 1]) : (p.includes(null) ? 'A confirmar' : 'MAX');
       
       const btnMinus = card.querySelector('.btn-control.minus');
       if (btnMinus) {
@@ -163,7 +98,7 @@
     // ══════════════════════════════════════
     // LÓGICA
     // ══════════════════════════════════════
-    function levelUp(nome) { if (state[nome] < 5) state[nome]++; after(nome); }
+    function levelUp(nome) { if (state[nome] < lastAvailableRank(nome)) state[nome]++; after(nome); }
     function levelDown(nome) { 
       if (state[nome] >= 0) {
         if (isLocked && state[nome] <= baseState[nome]) return; // Impede descer do nível base
@@ -190,7 +125,7 @@
           const p = TABELA[nome];
           const gasto = p.slice(0, n + 1).reduce((a, b) => a + b, 0);
           total += gasto;
-          maxTotal += maxCost(nome);
+          if (maxCost(nome) == null) maxTotal = NaN; else maxTotal += maxCost(nome);
         }
         if (isLocked && baseState[nome] >= 0) {
           const p = TABELA[nome];
@@ -213,8 +148,8 @@
       }
       
       document.getElementById('st-ativos').innerHTML =
-        `${ativos} <span style="font-size:1.6rem;color:var(--muted)">/21</span>`;
-      document.getElementById('st-maximo').textContent = ativos > 0 ? fmt(maxTotal) : '0';
+        `${ativos} <span style="font-size:1.6rem;color:var(--muted)">/${SIGIL_CATALOG.sigils.length}</span>`;
+      document.getElementById('st-maximo').textContent = Number.isNaN(maxTotal) ? 'A confirmar' : ativos > 0 ? fmt(maxTotal) : '0';
     }
 
     // ══════════════════════════════════════
@@ -247,7 +182,8 @@
 
         const img = document.createElement('div');
         img.className = 'sim-row-img';
-        img.style.backgroundImage = `url('sigils_icons/${nome.replace(/ /g, '_')}.png')`;
+        if (SIGILS[nome].icon) img.style.backgroundImage = `url('${SIGILS[nome].icon}')`;
+        else img.textContent = '?';
         img.title = nome;
 
         const info = document.createElement('div'); info.className = 'sim-row-info';
@@ -281,7 +217,7 @@
         .forEach(c => c.classList.toggle('focused', c.dataset.nome === nome));
 
       document.getElementById('sel-name').textContent = nome.toUpperCase();
-      document.getElementById('sel-desc').textContent = DESC[nome] || '';
+      document.getElementById('sel-desc').textContent = (DESC[nome] || '') + (SIGILS[nome].costs.includes(null) ? ' As estrelas deste Sigil ainda não estão disponíveis para simulação.' : '');
 
       const statsEl = document.getElementById('sigil-stats');
       const progEl = document.getElementById('level-prog');
@@ -290,19 +226,19 @@
       if (n >= 0) {
         const gasto = p.slice(0, n + 1).reduce((a, b) => a + b, 0);
         const maxC = maxCost(nome);
-        const resto = maxC - gasto;
-        const proxCu = n < 5 ? fmt(p[n + 1]) : '—';
-        const pct = Math.round((gasto / maxC) * 100);
+        const resto = maxC == null ? null : maxC - gasto;
+        const proxCu = p[n + 1] != null ? fmt(p[n + 1]) : '—';
+        const pct = maxC == null ? 0 : Math.round((gasto / maxC) * 100);
 
         document.getElementById('ss-nivel').textContent = n === 0 ? 'Desbloqueio' : `${n}${n === 5 ? ' MAX' : ''}`;
         document.getElementById('ss-gasto').textContent = fmt(gasto);
         document.getElementById('ss-prox').textContent = proxCu;
-        document.getElementById('ss-resto').textContent = fmt(resto);
+        document.getElementById('ss-resto').textContent = resto == null ? 'A confirmar' : fmt(resto);
         statsEl.style.display = 'grid';
 
         document.getElementById('lp-pct').textContent = `${pct}%`;
         document.getElementById('lp-fill').style.width = `${pct}%`;
-        progEl.style.display = 'block';
+        progEl.style.display = maxC == null ? 'none' : 'block';
       } else {
         statsEl.style.display = 'none';
         progEl.style.display = 'none';
@@ -314,7 +250,7 @@
       tbody.innerHTML = '';
       let acc = 0;
       p.forEach((custo, i) => {
-        acc += custo;
+        if (custo != null) acc += custo;
         const tr = document.createElement('tr');
         if (i < n) tr.className = 'r-past';
         else if (i === n) tr.className = 'r-current';
@@ -333,7 +269,7 @@
 
         const maxLabel = i === 5 ? `<span style="font-size:0.9rem;color:var(--red);margin-left:3px">MAX</span>` : '';
         const bonus = (BONUS[nome] && BONUS[nome][i]) ? BONUS[nome][i] : '—';
-        tr.innerHTML = `<td>${nvCol}${maxLabel}</td><td style="color:var(--gold);font-weight:700">${bonus}</td><td>${fmt(custo)}</td><td>${fmt(acc)}</td>`;
+        tr.innerHTML = `<td>${nvCol}${maxLabel}</td><td style="color:var(--gold);font-weight:700">${bonus}</td><td>${custo == null ? 'A confirmar' : fmt(custo)}</td><td>${custo == null ? '—' : fmt(acc)}</td>`;
         tbody.appendChild(tr);
       });
       tableEl.style.display = 'block';
@@ -387,3 +323,4 @@
     // INIT
     // ══════════════════════════════════════
     buildGrid();
+    updateStats();

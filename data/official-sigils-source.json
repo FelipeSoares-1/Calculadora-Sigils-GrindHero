@@ -1,0 +1,1985 @@
+{
+  "manifest": {
+    "formatVersion": 9,
+    "exportedAt": "2026-09-30T22:04:51.4739570Z",
+    "unityVersion": "6000.3.23f1"
+  },
+  "sigils": [
+    {
+      "id": 1,
+      "key": "life_leech",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Life Leech"
+        },
+        {
+          "locale": "pt",
+          "name": "Drenar Vida"
+        },
+        {
+          "locale": "es",
+          "name": "Robo de Vida"
+        },
+        {
+          "locale": "pl",
+          "name": "Kradzież życia"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Your attacks drain an amount of life points from your opponent to your own life points."
+        },
+        {
+          "locale": "pt",
+          "name": "Seus ataques drenam uma quantia de pontos de vida de seu oponente para seus próprios pontos de vida."
+        },
+        {
+          "locale": "es",
+          "name": "Tus ataques drenan una cantidad de puntos de vida de tu oponente a tus propios puntos de vida."
+        },
+        {
+          "locale": "pl",
+          "name": "Twoje ataki wysysają część punktów życia przeciwnika do twoich własnych punktów życia."
+        }
+      ],
+      "icon": "icons/sigils/1.png",
+      "price": 185,
+      "power": 4.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 185,
+          "power": 4.0
+        },
+        {
+          "rank": 1,
+          "price": 370,
+          "power": 8.0
+        },
+        {
+          "rank": 2,
+          "price": 462,
+          "power": 10.0
+        },
+        {
+          "rank": 3,
+          "price": 555,
+          "power": 12.0
+        },
+        {
+          "rank": 4,
+          "price": 648,
+          "power": 14.0
+        },
+        {
+          "rank": 5,
+          "price": 740,
+          "power": 16.0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "key": "reflect",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Reflect"
+        },
+        {
+          "locale": "pt",
+          "name": "Refletir"
+        },
+        {
+          "locale": "es",
+          "name": "Reflejo"
+        },
+        {
+          "locale": "pl",
+          "name": "Odbicie"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Whenever you receive an attack, part of the damage will be returned to the attacker."
+        },
+        {
+          "locale": "pt",
+          "name": "Sempre que receber um ataque, parte do dano será devolvido para aquele que desferiu o golpe."
+        },
+        {
+          "locale": "es",
+          "name": "Cada vez que recibas un ataque, parte del daño será devuelto al atacante."
+        },
+        {
+          "locale": "pl",
+          "name": "Za każdym razem, gdy otrzymasz atak, część obrażeń zostanie zwrócona atakującemu."
+        }
+      ],
+      "icon": "icons/sigils/2.png",
+      "price": 125,
+      "power": 4.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 125,
+          "power": 4.0
+        },
+        {
+          "rank": 1,
+          "price": 250,
+          "power": 8.0
+        },
+        {
+          "rank": 2,
+          "price": 312,
+          "power": 10.0
+        },
+        {
+          "rank": 3,
+          "price": 375,
+          "power": 12.0
+        },
+        {
+          "rank": 4,
+          "price": 438,
+          "power": 14.0
+        },
+        {
+          "rank": 5,
+          "price": 500,
+          "power": 16.0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "key": "protection",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Protection"
+        },
+        {
+          "locale": "pt",
+          "name": "Proteção"
+        },
+        {
+          "locale": "es",
+          "name": "Protección"
+        },
+        {
+          "locale": "pl",
+          "name": "Ochrona"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Causes a reduction in damage taken, both physical and magical."
+        },
+        {
+          "locale": "pt",
+          "name": "Causa uma redução no dano recebido, tanto físico quanto mágico."
+        },
+        {
+          "locale": "es",
+          "name": "Causa una reducción en el daño recibido, tanto físico como mágico."
+        },
+        {
+          "locale": "pl",
+          "name": "Powoduje zmniejszenie otrzymywanych obrażeń, zarówno fizycznych, jak i magicznych."
+        }
+      ],
+      "icon": "icons/sigils/3.png",
+      "price": 75,
+      "power": 2.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 75,
+          "power": 2.0
+        },
+        {
+          "rank": 1,
+          "price": 150,
+          "power": 4.0
+        },
+        {
+          "rank": 2,
+          "price": 188,
+          "power": 5.0
+        },
+        {
+          "rank": 3,
+          "price": 225,
+          "power": 6.0
+        },
+        {
+          "rank": 4,
+          "price": 262,
+          "power": 7.0
+        },
+        {
+          "rank": 5,
+          "price": 300,
+          "power": 8.0
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "key": "aggression",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Aggression"
+        },
+        {
+          "locale": "pt",
+          "name": "Agressão"
+        },
+        {
+          "locale": "es",
+          "name": "Agresión"
+        },
+        {
+          "locale": "pl",
+          "name": "Agresja"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Causes an increase in attacks made, both physical and magical."
+        },
+        {
+          "locale": "pt",
+          "name": "Causa um aumento nos ataques desferidos, tanto físico quanto mágico."
+        },
+        {
+          "locale": "es",
+          "name": "Causa un aumento en los ataques realizados, tanto físicos como mágicos."
+        },
+        {
+          "locale": "pl",
+          "name": "Powoduje wzrost zadawanych ataków, zarówno fizycznych, jak i magicznych."
+        }
+      ],
+      "icon": "icons/sigils/4.png",
+      "price": 125,
+      "power": 2.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 125,
+          "power": 2.0
+        },
+        {
+          "rank": 1,
+          "price": 250,
+          "power": 4.0
+        },
+        {
+          "rank": 2,
+          "price": 312,
+          "power": 5.0
+        },
+        {
+          "rank": 3,
+          "price": 375,
+          "power": 6.0
+        },
+        {
+          "rank": 4,
+          "price": 438,
+          "power": 7.0
+        },
+        {
+          "rank": 5,
+          "price": 500,
+          "power": 8.0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "key": "velocity",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Velocity"
+        },
+        {
+          "locale": "pt",
+          "name": "Velocidade"
+        },
+        {
+          "locale": "es",
+          "name": "Velocidad"
+        },
+        {
+          "locale": "pl",
+          "name": "Prędkość"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Causes an increase in the character's movement speed."
+        },
+        {
+          "locale": "pt",
+          "name": "Causa um aumento na velocidade de movimento do personagem."
+        },
+        {
+          "locale": "es",
+          "name": "Causa un aumento en la velocidad de movimiento del personaje."
+        },
+        {
+          "locale": "pl",
+          "name": "Powoduje wzrost prędkości poruszania się postaci."
+        }
+      ],
+      "icon": "icons/sigils/5.png",
+      "price": 125,
+      "power": 2.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 125,
+          "power": 2.0
+        },
+        {
+          "rank": 1,
+          "price": 250,
+          "power": 4.0
+        },
+        {
+          "rank": 2,
+          "price": 312,
+          "power": 5.0
+        },
+        {
+          "rank": 3,
+          "price": 375,
+          "power": 6.0
+        },
+        {
+          "rank": 4,
+          "price": 438,
+          "power": 7.0
+        },
+        {
+          "rank": 5,
+          "price": 500,
+          "power": 8.0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "key": "life",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Life"
+        },
+        {
+          "locale": "pt",
+          "name": "Vida"
+        },
+        {
+          "locale": "es",
+          "name": "Vida"
+        },
+        {
+          "locale": "pl",
+          "name": "Życie"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Causes an increase in the character's life points."
+        },
+        {
+          "locale": "pt",
+          "name": "Causa um aumento nos pontos de vida do personagem."
+        },
+        {
+          "locale": "es",
+          "name": "Causa un aumento en los puntos de vida del personaje."
+        },
+        {
+          "locale": "pl",
+          "name": "Powoduje wzrost punktów życia postaci."
+        }
+      ],
+      "icon": "icons/sigils/6.png",
+      "price": 75,
+      "power": 2.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 75,
+          "power": 2.0
+        },
+        {
+          "rank": 1,
+          "price": 150,
+          "power": 4.0
+        },
+        {
+          "rank": 2,
+          "price": 188,
+          "power": 5.0
+        },
+        {
+          "rank": 3,
+          "price": 225,
+          "power": 6.0
+        },
+        {
+          "rank": 4,
+          "price": 262,
+          "power": 7.0
+        },
+        {
+          "rank": 5,
+          "price": 300,
+          "power": 8.0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "key": "luck",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Luck"
+        },
+        {
+          "locale": "pt",
+          "name": "Sorte"
+        },
+        {
+          "locale": "es",
+          "name": "Suerte"
+        },
+        {
+          "locale": "pl",
+          "name": "Szczęście"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Proportionally increases the chance for items to drop from monsters and for each enchantment slot on dropped equipment to be filled. It also adds its value directly to item upgrade and enchantment success chances."
+        },
+        {
+          "locale": "pt",
+          "name": "Aumenta proporcionalmente a chance de itens caírem de monstros e de cada slot de encantamento em equipamentos dropados ser preenchido. Também adiciona seu valor diretamente às chances de sucesso de upgrade e encantamento de itens."
+        },
+        {
+          "locale": "es",
+          "name": "Aumenta proporcionalmente la probabilidad de que los monstruos suelten objetos y de que se complete cada ranura de encantamiento en el equipo obtenido como botín. También añade su valor directamente a las probabilidades de éxito de mejora y encantamiento de objetos."
+        },
+        {
+          "locale": "pl",
+          "name": "Proporcjonalnie zwiększa szansę na wypadanie przedmiotów z potworów oraz na zapełnienie każdego slotu zaklęcia w zdobytym ekwipunku. Dodaje też swoją wartość bezpośrednio do szans powodzenia ulepszania i zaklinania przedmiotów."
+        }
+      ],
+      "icon": "icons/sigils/7.png",
+      "price": 125,
+      "power": 4.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 125,
+          "power": 4.0
+        },
+        {
+          "rank": 1,
+          "price": 250,
+          "power": 8.0
+        },
+        {
+          "rank": 2,
+          "price": 312,
+          "power": 10.0
+        },
+        {
+          "rank": 3,
+          "price": 375,
+          "power": 12.0
+        },
+        {
+          "rank": 4,
+          "price": 438,
+          "power": 14.0
+        },
+        {
+          "rank": 5,
+          "price": 500,
+          "power": 16.0
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "key": "greed",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Greed"
+        },
+        {
+          "locale": "pt",
+          "name": "Ganância"
+        },
+        {
+          "locale": "es",
+          "name": "Avaricia"
+        },
+        {
+          "locale": "pl",
+          "name": "Chciwość"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "The amount of loot collected will be greater."
+        },
+        {
+          "locale": "pt",
+          "name": "A quantidade de loot coletado será maior."
+        },
+        {
+          "locale": "es",
+          "name": "La cantidad de botín recolectado será mayor."
+        },
+        {
+          "locale": "pl",
+          "name": "Ilość zebranych łupów będzie większa."
+        }
+      ],
+      "icon": "icons/sigils/8.png",
+      "price": 125,
+      "power": 5.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 125,
+          "power": 5.0
+        },
+        {
+          "rank": 1,
+          "price": 250,
+          "power": 10.0
+        },
+        {
+          "rank": 2,
+          "price": 312,
+          "power": 12.5
+        },
+        {
+          "rank": 3,
+          "price": 375,
+          "power": 15.0
+        },
+        {
+          "rank": 4,
+          "price": 438,
+          "power": 17.5
+        },
+        {
+          "rank": 5,
+          "price": 500,
+          "power": 20.0
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "key": "dodge",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Dodge"
+        },
+        {
+          "locale": "pt",
+          "name": "Esquiva"
+        },
+        {
+          "locale": "es",
+          "name": "Esquivar"
+        },
+        {
+          "locale": "pl",
+          "name": "Unik"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Gain a chance to dodge enemy attacks."
+        },
+        {
+          "locale": "pt",
+          "name": "Obtém a chance de se esquivar de ataques inimigos."
+        },
+        {
+          "locale": "es",
+          "name": "Obtén una probabilidad de esquivar los ataques enemigos."
+        },
+        {
+          "locale": "pl",
+          "name": "Zyskaj szansę na uniknięcie ataków wroga."
+        }
+      ],
+      "icon": "icons/sigils/9.png",
+      "price": 125,
+      "power": 2.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 125,
+          "power": 2.0
+        },
+        {
+          "rank": 1,
+          "price": 250,
+          "power": 4.0
+        },
+        {
+          "rank": 2,
+          "price": 312,
+          "power": 5.0
+        },
+        {
+          "rank": 3,
+          "price": 375,
+          "power": 6.0
+        },
+        {
+          "rank": 4,
+          "price": 438,
+          "power": 7.0
+        },
+        {
+          "rank": 5,
+          "price": 500,
+          "power": 8.0
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "key": "mana_leech",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Mana Leech"
+        },
+        {
+          "locale": "pt",
+          "name": "Drenar Mana"
+        },
+        {
+          "locale": "es",
+          "name": "Robo de Maná"
+        },
+        {
+          "locale": "pl",
+          "name": "Kradzież many"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Your attacks drain an amount of mana points from your opponent to your own mana points."
+        },
+        {
+          "locale": "pt",
+          "name": "Seus ataques drenam uma quantia de pontos de mana de seu oponente para seus próprios pontos de mana."
+        },
+        {
+          "locale": "es",
+          "name": "Tus ataques drenan una cantidad de puntos de maná de tu oponente a tus propios puntos de maná."
+        },
+        {
+          "locale": "pl",
+          "name": "Twoje ataki wysysają część punktów many przeciwnika do twoich własnych punktów many."
+        }
+      ],
+      "icon": "icons/sigils/10.png",
+      "price": 225,
+      "power": 4.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 225,
+          "power": 4.0
+        },
+        {
+          "rank": 1,
+          "price": 450,
+          "power": 8.0
+        },
+        {
+          "rank": 2,
+          "price": 562,
+          "power": 10.0
+        },
+        {
+          "rank": 3,
+          "price": 675,
+          "power": 12.0
+        },
+        {
+          "rank": 4,
+          "price": 788,
+          "power": 14.0
+        },
+        {
+          "rank": 5,
+          "price": 900,
+          "power": 16.0
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "key": "boldness",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Boldness"
+        },
+        {
+          "locale": "pt",
+          "name": "Ousadia"
+        },
+        {
+          "locale": "es",
+          "name": "Osadía"
+        },
+        {
+          "locale": "pl",
+          "name": "Śmiałość"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Increases the chance to provoke monsters with your attacks. The value is added directly to the skill at the moment of the attack; for example, if the skill has a 10% provoke chance and your sigil adds 2%, the total will be 12% chance."
+        },
+        {
+          "locale": "pt",
+          "name": "Aumenta a chance de provocar monstros em seus ataques. O valor é adicionado diretamente na habilidade no momento do ataque, por exemplo, se a habilidade possuir uma chance de provocar de 10% e o seu sigil tiver 2%, no total serão 12% de chance."
+        },
+        {
+          "locale": "es",
+          "name": "Aumenta la probabilidad de provocar monstruos con tus ataques. El valor se suma directamente a la habilidad en el momento del ataque; por ejemplo, si la habilidad tiene un 10% de probabilidad de provocar y tu sigil agrega un 2%, en total será un 12% de probabilidad."
+        },
+        {
+          "locale": "pl",
+          "name": "Zwiększa szansę na sprowokowanie potworów twoimi atakami. Wartość jest dodawana bezpośrednio do umiejętności w momencie ataku; na przykład, jeśli umiejętność ma 10% szansy na prowokację, a twój sygnet dodaje 2%, łącznie będzie to 12% szansy."
+        }
+      ],
+      "icon": "icons/sigils/11.png",
+      "price": 125,
+      "power": 3.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 125,
+          "power": 3.0
+        },
+        {
+          "rank": 1,
+          "price": 250,
+          "power": 6.0
+        },
+        {
+          "rank": 2,
+          "price": 312,
+          "power": 7.5
+        },
+        {
+          "rank": 3,
+          "price": 375,
+          "power": 9.0
+        },
+        {
+          "rank": 4,
+          "price": 438,
+          "power": 10.5
+        },
+        {
+          "rank": 5,
+          "price": 500,
+          "power": 12.0
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "key": "pacifist",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Pacifist"
+        },
+        {
+          "locale": "pt",
+          "name": "Pacifista"
+        },
+        {
+          "locale": "es",
+          "name": "Pacifista"
+        },
+        {
+          "locale": "pl",
+          "name": "Pacyfista"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Reduces the chance to provoke monsters with your attacks. The value is subtracted directly from the skill at the moment of the attack; for example, if the skill has a 10% provoke chance and your sigil reduces it by 2%, the total will be 8% chance."
+        },
+        {
+          "locale": "pt",
+          "name": "Reduz a chance de provocar monstros em seus ataques. O valor é removido diretamente na habilidade no momento do ataque, por exemplo, se a habilidade possuir uma chance de provocar de 10% e o seu sigil tiver 2%, no total serão 8% de chance."
+        },
+        {
+          "locale": "es",
+          "name": "Reduce la probabilidad de provocar monstruos con tus ataques. El valor se resta directamente de la habilidad en el momento del ataque; por ejemplo, si la habilidad tiene un 10% de probabilidad de provocar y tu sigil reduce un 2%, en total será un 8% de probabilidad."
+        },
+        {
+          "locale": "pl",
+          "name": "Zmniejsza szansę na sprowokowanie potworów twoimi atakami. Wartość jest odejmowana bezpośrednio od umiejętności w momencie ataku; na przykład, jeśli umiejętność ma 10% szansy na prowokację, a twój sygnet odejmuje 2%, łącznie będzie to 8% szansy."
+        }
+      ],
+      "icon": "icons/sigils/12.png",
+      "price": 125,
+      "power": 3.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 125,
+          "power": 3.0
+        },
+        {
+          "rank": 1,
+          "price": 250,
+          "power": 6.0
+        },
+        {
+          "rank": 2,
+          "price": 312,
+          "power": 7.5
+        },
+        {
+          "rank": 3,
+          "price": 375,
+          "power": 9.0
+        },
+        {
+          "rank": 4,
+          "price": 438,
+          "power": 10.5
+        },
+        {
+          "rank": 5,
+          "price": 500,
+          "power": 12.0
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "key": "naturalist",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Naturalist"
+        },
+        {
+          "locale": "pt",
+          "name": "Naturalista"
+        },
+        {
+          "locale": "es",
+          "name": "Naturalista"
+        },
+        {
+          "locale": "pl",
+          "name": "Naturalista"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Reduces the natural recovery time of your health, mana, and stamina points, making them regenerate faster."
+        },
+        {
+          "locale": "pt",
+          "name": "Reduz o tempo de recuperação natural de seus pontos de vida, mana e estamina, fazendo que se regenere mais rapidamente."
+        },
+        {
+          "locale": "es",
+          "name": "Reduce el tiempo de recuperación natural de tus puntos de vida, maná y stamina, haciendo que se regeneren más rápido."
+        },
+        {
+          "locale": "pl",
+          "name": "Skraca naturalny czas regeneracji punktów życia, many i staminy, sprawiając, że odnawiają się szybciej."
+        }
+      ],
+      "icon": "icons/sigils/13.png",
+      "price": 150,
+      "power": 10.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 150,
+          "power": 10.0
+        },
+        {
+          "rank": 1,
+          "price": 300,
+          "power": 20.0
+        },
+        {
+          "rank": 2,
+          "price": 375,
+          "power": 25.0
+        },
+        {
+          "rank": 3,
+          "price": 450,
+          "power": 30.0
+        },
+        {
+          "rank": 4,
+          "price": 525,
+          "power": 35.0
+        },
+        {
+          "rank": 5,
+          "price": 600,
+          "power": 40.0
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "key": "artisan",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Artisan"
+        },
+        {
+          "locale": "pt",
+          "name": "Artesão"
+        },
+        {
+          "locale": "es",
+          "name": "Artesano"
+        },
+        {
+          "locale": "pl",
+          "name": "Rzemieślnik"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Increases the quantity of items produced by all crafting spells, such as arrow crafting spells."
+        },
+        {
+          "locale": "pt",
+          "name": "Aumenta a quantidade de itens produzidos em todas as magias de criação, como por exemplo, magias de criação de flechas."
+        },
+        {
+          "locale": "es",
+          "name": "Aumenta la cantidad de objetos producidos en todos los hechizos de creación, como por ejemplo, hechizos de creación de flechas."
+        },
+        {
+          "locale": "pl",
+          "name": "Zwiększa ilość wytwarzanych przedmiotów we wszystkich zaklęciach tworzenia, na przykład w zaklęciach tworzenia strzał."
+        }
+      ],
+      "icon": "icons/sigils/14.png",
+      "price": 45,
+      "power": 100.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 45,
+          "power": 100.0
+        },
+        {
+          "rank": 1,
+          "price": 90,
+          "power": 200.0
+        },
+        {
+          "rank": 2,
+          "price": 112,
+          "power": 250.0
+        },
+        {
+          "rank": 3,
+          "price": 135,
+          "power": 300.0
+        },
+        {
+          "rank": 4,
+          "price": 158,
+          "power": 350.0
+        },
+        {
+          "rank": 5,
+          "price": 180,
+          "power": 400.0
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "key": "rushed",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Rushed"
+        },
+        {
+          "locale": "pt",
+          "name": "Apressado"
+        },
+        {
+          "locale": "es",
+          "name": "Apressado"
+        },
+        {
+          "locale": "pl",
+          "name": "Pośpieszny"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Reduces the cooldown time (for using abilities of the same category) of your spells and items, enabling faster spell combos."
+        },
+        {
+          "locale": "pt",
+          "name": "Reduz o tempo de cooldown (para usar habilidades de mesma categoria) de suas magias e itens, possibilitando combos de magias mais rápidos."
+        },
+        {
+          "locale": "es",
+          "name": "Reduce el tiempo de enfriamiento (para usar habilidades de la misma categoría) de tus hechizos y objetos, permitiendo combos de hechizos más rápidos."
+        },
+        {
+          "locale": "pl",
+          "name": "Skraca czas odnowienia (przy używaniu umiejętności z tej samej kategorii) twoich zaklęć i przedmiotów, umożliwiając szybsze kombinacje zaklęć."
+        }
+      ],
+      "icon": "icons/sigils/15.png",
+      "price": 45,
+      "power": 20.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 45,
+          "power": 20.0
+        },
+        {
+          "rank": 1,
+          "price": 90,
+          "power": 40.0
+        },
+        {
+          "rank": 2,
+          "price": 112,
+          "power": 50.0
+        },
+        {
+          "rank": 3,
+          "price": 135,
+          "power": 60.0
+        },
+        {
+          "rank": 4,
+          "price": 158,
+          "power": 70.0
+        },
+        {
+          "rank": 5,
+          "price": 180,
+          "power": 80.0
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "key": "stamina_leech",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Stamina Leech"
+        },
+        {
+          "locale": "pt",
+          "name": "Drenar Stamina"
+        },
+        {
+          "locale": "es",
+          "name": "Robo de Stamina"
+        },
+        {
+          "locale": "pl",
+          "name": "Kradzież Staminy"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Your attacks drain a portion of stamina points from your opponent to your own stamina points."
+        },
+        {
+          "locale": "pt",
+          "name": "Seus ataques drenam uma quantia de pontos de stamina de seu oponente para seus próprios pontos de stamina."
+        },
+        {
+          "locale": "es",
+          "name": "Tus ataques drenan una porción de puntos de stamina de tu oponente hacia tus propios puntos de stamina."
+        },
+        {
+          "locale": "pl",
+          "name": "Twoje ataki wysysają część punktów staminy od przeciwnika do twojej własnej staminy."
+        }
+      ],
+      "icon": "icons/sigils/16.png",
+      "price": 185,
+      "power": 1.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 185,
+          "power": 1.0
+        },
+        {
+          "rank": 1,
+          "price": 370,
+          "power": 2.0
+        },
+        {
+          "rank": 2,
+          "price": 462,
+          "power": 2.5
+        },
+        {
+          "rank": 3,
+          "price": 555,
+          "power": 3.0
+        },
+        {
+          "rank": 4,
+          "price": 648,
+          "power": 3.5
+        },
+        {
+          "rank": 5,
+          "price": 740,
+          "power": 4.0
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "key": "expert",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Expert"
+        },
+        {
+          "locale": "pt",
+          "name": "Especialista"
+        },
+        {
+          "locale": "es",
+          "name": "Experto"
+        },
+        {
+          "locale": "pl",
+          "name": "Ekspert"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Speeds up the experience gain for your items' progression, causing them to level up more quickly."
+        },
+        {
+          "locale": "pt",
+          "name": "Acelera o ganho de experiência para evolução de seus itens, fazendo com que eles subam de nível mais rapidamente."
+        },
+        {
+          "locale": "es",
+          "name": "Acelera la ganancia de experiencia para la evolución de tus objetos, haciendo que suban de nivel más rápidamente."
+        },
+        {
+          "locale": "pl",
+          "name": "Przyspiesza zdobywanie doswiadczenia potrzebnego do rozwoju twoich przedmiotow, dzieki czemu awansuja szybciej."
+        }
+      ],
+      "icon": "icons/sigils/17.png",
+      "price": 125,
+      "power": 75.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 125,
+          "power": 75.0
+        },
+        {
+          "rank": 1,
+          "price": 250,
+          "power": 150.0
+        },
+        {
+          "rank": 2,
+          "price": 312,
+          "power": 187.5
+        },
+        {
+          "rank": 3,
+          "price": 375,
+          "power": 225.0
+        },
+        {
+          "rank": 4,
+          "price": 438,
+          "power": 262.5
+        },
+        {
+          "rank": 5,
+          "price": 500,
+          "power": 300.0
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "key": "alchemist",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Alchemist"
+        },
+        {
+          "locale": "pt",
+          "name": "Alquimista"
+        },
+        {
+          "locale": "es",
+          "name": "Alquimista"
+        },
+        {
+          "locale": "pl",
+          "name": "Alchemik"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Increases the potency of your potions, causing them to restore more health, mana, and stamina than normal."
+        },
+        {
+          "locale": "pt",
+          "name": "Aumenta a potência de suas poções, fazendo com que recuperem mais vida, mana e estamina do que o normal."
+        },
+        {
+          "locale": "es",
+          "name": "Aumenta la potencia de tus pociones, haciendo que recuperen más vida, maná y estamina de lo normal."
+        },
+        {
+          "locale": "pl",
+          "name": "Zwiksza moc twoich mikstur, dzieki czemu przywracaja wiecej zdrowia, many i wytrzymalosci niz zwykle."
+        }
+      ],
+      "icon": "icons/sigils/18.png",
+      "price": 75,
+      "power": 25.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 75,
+          "power": 25.0
+        },
+        {
+          "rank": 1,
+          "price": 150,
+          "power": 50.0
+        },
+        {
+          "rank": 2,
+          "price": 188,
+          "power": 62.5
+        },
+        {
+          "rank": 3,
+          "price": 225,
+          "power": 75.0
+        },
+        {
+          "rank": 4,
+          "price": 262,
+          "power": 87.5
+        },
+        {
+          "rank": 5,
+          "price": 300,
+          "power": 100.0
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "key": "athlete",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Athlete"
+        },
+        {
+          "locale": "pt",
+          "name": "Atleta"
+        },
+        {
+          "locale": "es",
+          "name": "Atleta"
+        },
+        {
+          "locale": "pl",
+          "name": "Atleta"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Speeds up the progression of your attributes (melee, magic, distance, shielding, or taming), causing them to level up more quickly."
+        },
+        {
+          "locale": "pt",
+          "name": "Acelera a evolução de seus atributos (corpo a corpo, magia, distância, escudaria ou adestramento), fazendo com que eles subam de nível mais rapidamente."
+        },
+        {
+          "locale": "es",
+          "name": "Acelera la evolución de tus atributos (cuerpo a cuerpo, magia, distancia, escudo o doma), haciendo que suban de nivel más rápidamente."
+        },
+        {
+          "locale": "pl",
+          "name": "Przyspiesza rozwoj twoich atrybutow (walka wrecz, magia, dystans, obrona tarcza lub oswajanie), dzieki czemu awansuja szybciej."
+        }
+      ],
+      "icon": "icons/sigils/19.png",
+      "price": 145,
+      "power": 10.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 145,
+          "power": 10.0
+        },
+        {
+          "rank": 1,
+          "price": 290,
+          "power": 20.0
+        },
+        {
+          "rank": 2,
+          "price": 362,
+          "power": 25.0
+        },
+        {
+          "rank": 3,
+          "price": 435,
+          "power": 30.0
+        },
+        {
+          "rank": 4,
+          "price": 508,
+          "power": 35.0
+        },
+        {
+          "rank": 5,
+          "price": 580,
+          "power": 40.0
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "key": "precision",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Precision"
+        },
+        {
+          "locale": "pt",
+          "name": "Precisão"
+        },
+        {
+          "locale": "es",
+          "name": "Precisión"
+        },
+        {
+          "locale": "pl",
+          "name": "Precyzja"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Increases the chance of landing critical hits."
+        },
+        {
+          "locale": "pt",
+          "name": "Aumenta a chance de desferir acertos críticos."
+        },
+        {
+          "locale": "es",
+          "name": "Aumenta la probabilidad de asestar golpes críticos."
+        },
+        {
+          "locale": "pl",
+          "name": "Zwiksza szanse na zadanie ciosow krytycznych."
+        }
+      ],
+      "icon": "icons/sigils/20.png",
+      "price": 105,
+      "power": 25.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 105,
+          "power": 25.0
+        },
+        {
+          "rank": 1,
+          "price": 210,
+          "power": 50.0
+        },
+        {
+          "rank": 2,
+          "price": 262,
+          "power": 62.5
+        },
+        {
+          "rank": 3,
+          "price": 315,
+          "power": 75.0
+        },
+        {
+          "rank": 4,
+          "price": 368,
+          "power": 87.5
+        },
+        {
+          "rank": 5,
+          "price": 420,
+          "power": 100.0
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "key": "lethality",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Lethality"
+        },
+        {
+          "locale": "pt",
+          "name": "Letalidade"
+        },
+        {
+          "locale": "es",
+          "name": "Letalidad"
+        },
+        {
+          "locale": "pl",
+          "name": "Smiertelnosc"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Increases the total damage dealt by your critical attacks."
+        },
+        {
+          "locale": "pt",
+          "name": "Aumenta o total de dano causado por seus ataques críticos."
+        },
+        {
+          "locale": "es",
+          "name": "Aumenta el daño total causado por tus ataques críticos."
+        },
+        {
+          "locale": "pl",
+          "name": "Zwiksza calkowite obrazenia zadawane przez twoje ataki krytyczne."
+        }
+      ],
+      "icon": "icons/sigils/21.png",
+      "price": 85,
+      "power": 25.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 85,
+          "power": 25.0
+        },
+        {
+          "rank": 1,
+          "price": 170,
+          "power": 50.0
+        },
+        {
+          "rank": 2,
+          "price": 212,
+          "power": 62.5
+        },
+        {
+          "rank": 3,
+          "price": 255,
+          "power": 75.0
+        },
+        {
+          "rank": 4,
+          "price": 298,
+          "power": 87.5
+        },
+        {
+          "rank": 5,
+          "price": 340,
+          "power": 100.0
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "key": "mana",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Mana"
+        },
+        {
+          "locale": "pt",
+          "name": "Mana"
+        },
+        {
+          "locale": "es",
+          "name": "Maná"
+        },
+        {
+          "locale": "pl",
+          "name": "Mana"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Causes an increase in the character's mana points."
+        },
+        {
+          "locale": "pt",
+          "name": "Causa um aumento nos pontos de mana do personagem."
+        },
+        {
+          "locale": "es",
+          "name": "Causa un aumento en los puntos de maná del personaje."
+        },
+        {
+          "locale": "pl",
+          "name": "Powoduje zwiększenie punktów many postaci."
+        }
+      ],
+      "icon": "icons/sigils/22.png",
+      "price": 75,
+      "power": 2.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 75,
+          "power": 2.0
+        },
+        {
+          "rank": 1,
+          "price": 150,
+          "power": 4.0
+        },
+        {
+          "rank": 2,
+          "price": 188,
+          "power": 5.0
+        },
+        {
+          "rank": 3,
+          "price": 225,
+          "power": 6.0
+        },
+        {
+          "rank": 4,
+          "price": 262,
+          "power": 7.0
+        },
+        {
+          "rank": 5,
+          "price": 300,
+          "power": 8.0
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "key": "stamina",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Stamina"
+        },
+        {
+          "locale": "pt",
+          "name": "Estamina"
+        },
+        {
+          "locale": "es",
+          "name": "Estamina"
+        },
+        {
+          "locale": "pl",
+          "name": "Stamina"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Causes an increase in the character's stamina points."
+        },
+        {
+          "locale": "pt",
+          "name": "Causa um aumento nos pontos de estamina do personagem."
+        },
+        {
+          "locale": "es",
+          "name": "Causa un aumento en los puntos de estamina del personaje."
+        },
+        {
+          "locale": "pl",
+          "name": "Powoduje zwiększenie punktów staminy postaci."
+        }
+      ],
+      "icon": "icons/sigils/23.png",
+      "price": 75,
+      "power": 2.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 75,
+          "power": 2.0
+        },
+        {
+          "rank": 1,
+          "price": 150,
+          "power": 4.0
+        },
+        {
+          "rank": 2,
+          "price": 188,
+          "power": 5.0
+        },
+        {
+          "rank": 3,
+          "price": 225,
+          "power": 6.0
+        },
+        {
+          "rank": 4,
+          "price": 262,
+          "power": 7.0
+        },
+        {
+          "rank": 5,
+          "price": 300,
+          "power": 8.0
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "key": "jeweler",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Jeweler"
+        },
+        {
+          "locale": "pt",
+          "name": "Joalheiro"
+        },
+        {
+          "locale": "es",
+          "name": "Joyero"
+        },
+        {
+          "locale": "pl",
+          "name": "Jubiler"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Increases the number of repeated enchantments in item slots that take effect when worn/equipped. By default, only five take effect at the same time, but with this sigil, you can increase that limit."
+        },
+        {
+          "locale": "pt",
+          "name": "Aumenta a quantidade de encantamentos repetidos em slots de itens que fazem efeito quando vestidos/equipados. Por padrão, apenas cinco fazem efeito ao mesmo tempo, mas com este sigilo, você pode aumentar esse limite."
+        },
+        {
+          "locale": "es",
+          "name": "Aumenta la cantidad de encantamientos repetidos en ranuras de objetos que surten efecto al vestirse/equiparse. De forma predeterminada, solo cinco surten efecto al mismo tiempo, pero con este sigilo puedes aumentar ese límite."
+        },
+        {
+          "locale": "pl",
+          "name": "Zwiększa liczbę powtarzających się zaklęć w slotach przedmiotów, które działają po założeniu/wyposażeniu. Domyślnie tylko pięć działa jednocześnie, ale dzięki temu sigilowi możesz zwiększyć ten limit."
+        }
+      ],
+      "icon": "icons/sigils/24.png",
+      "price": 185,
+      "power": 1.0,
+      "powerIsPercentage": false,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 185,
+          "power": 1.0
+        },
+        {
+          "rank": 1,
+          "price": 370,
+          "power": 2.0
+        },
+        {
+          "rank": 2,
+          "price": 462,
+          "power": 3.0
+        },
+        {
+          "rank": 3,
+          "price": 555,
+          "power": 4.0
+        },
+        {
+          "rank": 4,
+          "price": 648,
+          "power": 5.0
+        },
+        {
+          "rank": 5,
+          "price": 740,
+          "power": 6.0
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "key": "negotiator",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Negotiator"
+        },
+        {
+          "locale": "pt",
+          "name": "Negociador"
+        },
+        {
+          "locale": "es",
+          "name": "Negociador"
+        },
+        {
+          "locale": "pl",
+          "name": "Negocjator"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Reduces the amount of materials required to enchant items."
+        },
+        {
+          "locale": "pt",
+          "name": "Reduz a quantidade de materiais necessários para encantar itens."
+        },
+        {
+          "locale": "es",
+          "name": "Reduce la cantidad de materiales necesarios para encantar objetos."
+        },
+        {
+          "locale": "pl",
+          "name": "Zmniejsza ilość materiałów potrzebnych do zaklinania przedmiotów."
+        }
+      ],
+      "icon": "icons/sigils/25.png",
+      "price": 200,
+      "power": 10.0,
+      "powerIsPercentage": true,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 200,
+          "power": 10.0
+        },
+        {
+          "rank": 1,
+          "price": 400,
+          "power": 20.0
+        },
+        {
+          "rank": 2,
+          "price": 500,
+          "power": 25.0
+        },
+        {
+          "rank": 3,
+          "price": 600,
+          "power": 30.0
+        },
+        {
+          "rank": 4,
+          "price": 700,
+          "power": 35.0
+        },
+        {
+          "rank": 5,
+          "price": 800,
+          "power": 40.0
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "key": "repairer",
+      "translations": [
+        {
+          "locale": "en",
+          "name": "Repairer"
+        },
+        {
+          "locale": "pt",
+          "name": "Reparador"
+        },
+        {
+          "locale": "es",
+          "name": "Reparador"
+        },
+        {
+          "locale": "pl",
+          "name": "Naprawiacz"
+        }
+      ],
+      "descriptionTranslations": [
+        {
+          "locale": "en",
+          "name": "Increases the material refund rate when removing non-premium enchantments."
+        },
+        {
+          "locale": "pt",
+          "name": "Aumenta a taxa de restituição de materiais ao remover encantamentos não-premium."
+        },
+        {
+          "locale": "es",
+          "name": "Aumenta la tasa de devolución de materiales al eliminar encantamientos no premium."
+        },
+        {
+          "locale": "pl",
+          "name": "Zwiększa współczynnik zwrotu materiałów podczas usuwania zaklęć innych niż premium."
+        }
+      ],
+      "icon": "icons/sigils/26.png",
+      "price": 135,
+      "power": 10.0,
+      "powerIsPercentage": false,
+      "rankProgression": [
+        {
+          "rank": 0,
+          "price": 135,
+          "power": 10.0
+        },
+        {
+          "rank": 1,
+          "price": 270,
+          "power": 20.0
+        },
+        {
+          "rank": 2,
+          "price": 338,
+          "power": 30.0
+        },
+        {
+          "rank": 3,
+          "price": 405,
+          "power": 40.0
+        },
+        {
+          "rank": 4,
+          "price": 472,
+          "power": 50.0
+        },
+        {
+          "rank": 5,
+          "price": 540,
+          "power": 60.0
+        }
+      ]
+    }
+  ]
+}

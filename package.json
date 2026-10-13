@@ -1,0 +1,7 @@
+{
+  "name": "calculadora-sigils-grindhero",
+  "private": true,
+  "version": "0.2.0",
+  "scripts": {"build": "node scripts/build.cjs", "test": "node --test tests/calculator.cjs"},
+  "devDependencies": {"javascript-obfuscator": "4.1.1", "jsdom": "26.1.0"}
+}

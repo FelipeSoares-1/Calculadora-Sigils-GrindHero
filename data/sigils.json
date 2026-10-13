@@ -1,0 +1,801 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "repository": "FelipeSoares-1/grind-hero-analysis",
+    "commit": "6979599e5775e9fca176c920535c50d84b36e1c3",
+    "steamBuild": 25728003,
+    "asset": "sharedassets2.assets",
+    "note": "Nomes, descrições, ícones e progressões de 0 a 5 estrelas importados do catálogo público da wiki oficial. Não extrapola fórmulas.",
+    "wiki": "https://grindhero.online/pt/wiki/sigils",
+    "catalogUrl": "https://grindhero.online/game-data/catalog.json",
+    "catalogSha256": "fbd94efc895a811747bd871e39455bd13ee1b18b4b06e45dc3392873628df3b2",
+    "catalogManifest": {
+      "formatVersion": 9,
+      "exportedAt": "2026-09-30T22:04:51.4739570Z",
+      "unityVersion": "6000.3.23f1"
+    },
+    "checkedAt": "2026-10-13"
+  },
+  "sigils": [
+    {
+      "id": 1,
+      "key": "life_leech",
+      "name": "Drenar Vida",
+      "description": "Seus ataques drenam uma quantia de pontos de vida de seu oponente para seus próprios pontos de vida.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        185,
+        370,
+        462,
+        555,
+        648,
+        740
+      ],
+      "bonuses": [
+        4.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/1.png",
+      "spritePathId": 54965,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/1.png"
+    },
+    {
+      "id": 2,
+      "key": "reflect",
+      "name": "Refletir",
+      "description": "Sempre que receber um ataque, parte do dano será devolvido para aquele que desferiu o golpe.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        125,
+        250,
+        312,
+        375,
+        438,
+        500
+      ],
+      "bonuses": [
+        4.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/2.png",
+      "spritePathId": 54990,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/2.png"
+    },
+    {
+      "id": 3,
+      "key": "protection",
+      "name": "Proteção",
+      "description": "Causa uma redução no dano recebido, tanto físico quanto mágico.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        75,
+        150,
+        188,
+        225,
+        262,
+        300
+      ],
+      "bonuses": [
+        2.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/3.png",
+      "spritePathId": 54857,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/3.png"
+    },
+    {
+      "id": 4,
+      "key": "aggression",
+      "name": "Agressão",
+      "description": "Causa um aumento nos ataques desferidos, tanto físico quanto mágico.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        125,
+        250,
+        312,
+        375,
+        438,
+        500
+      ],
+      "bonuses": [
+        2.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/4.png",
+      "spritePathId": 54905,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/4.png"
+    },
+    {
+      "id": 5,
+      "key": "velocity",
+      "name": "Velocidade",
+      "description": "Causa um aumento na velocidade de movimento do personagem.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        125,
+        250,
+        312,
+        375,
+        438,
+        500
+      ],
+      "bonuses": [
+        2.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/5.png",
+      "spritePathId": 55061,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/5.png"
+    },
+    {
+      "id": 6,
+      "key": "life",
+      "name": "Vida",
+      "description": "Causa um aumento nos pontos de vida do personagem.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        75,
+        150,
+        188,
+        225,
+        262,
+        300
+      ],
+      "bonuses": [
+        2.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/6.png",
+      "spritePathId": 54949,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/6.png"
+    },
+    {
+      "id": 7,
+      "key": "luck",
+      "name": "Sorte",
+      "description": "Aumenta proporcionalmente a chance de itens caírem de monstros e de cada slot de encantamento em equipamentos dropados ser preenchido. Também adiciona seu valor diretamente às chances de sucesso de upgrade e encantamento de itens.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        125,
+        250,
+        312,
+        375,
+        438,
+        500
+      ],
+      "bonuses": [
+        4.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/7.png",
+      "spritePathId": 54933,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/7.png"
+    },
+    {
+      "id": 8,
+      "key": "greed",
+      "name": "Ganância",
+      "description": "A quantidade de loot coletado será maior.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        125,
+        250,
+        312,
+        375,
+        438,
+        500
+      ],
+      "bonuses": [
+        5.0,
+        10.0,
+        12.5,
+        15.0,
+        17.5,
+        20.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/8.png",
+      "spritePathId": 54822,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/8.png"
+    },
+    {
+      "id": 9,
+      "key": "dodge",
+      "name": "Esquiva",
+      "description": "Obtém a chance de se esquivar de ataques inimigos.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        125,
+        250,
+        312,
+        375,
+        438,
+        500
+      ],
+      "bonuses": [
+        2.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/9.png",
+      "spritePathId": 54843,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/9.png"
+    },
+    {
+      "id": 10,
+      "key": "mana_leech",
+      "name": "Drenar Mana",
+      "description": "Seus ataques drenam uma quantia de pontos de mana de seu oponente para seus próprios pontos de mana.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        225,
+        450,
+        562,
+        675,
+        788,
+        900
+      ],
+      "bonuses": [
+        4.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/10.png",
+      "spritePathId": 54744,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/10.png"
+    },
+    {
+      "id": 11,
+      "key": "boldness",
+      "name": "Ousadia",
+      "description": "Aumenta a chance de provocar monstros em seus ataques. O valor é adicionado diretamente na habilidade no momento do ataque, por exemplo, se a habilidade possuir uma chance de provocar de 10% e o seu sigil tiver 2%, no total serão 12% de chance.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        125,
+        250,
+        312,
+        375,
+        438,
+        500
+      ],
+      "bonuses": [
+        3.0,
+        6.0,
+        7.5,
+        9.0,
+        10.5,
+        12.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/11.png",
+      "spritePathId": 55050,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/11.png"
+    },
+    {
+      "id": 12,
+      "key": "pacifist",
+      "name": "Pacifista",
+      "description": "Reduz a chance de provocar monstros em seus ataques. O valor é removido diretamente na habilidade no momento do ataque, por exemplo, se a habilidade possuir uma chance de provocar de 10% e o seu sigil tiver 2%, no total serão 8% de chance.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        125,
+        250,
+        312,
+        375,
+        438,
+        500
+      ],
+      "bonuses": [
+        3.0,
+        6.0,
+        7.5,
+        9.0,
+        10.5,
+        12.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/12.png",
+      "spritePathId": 54817,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/12.png"
+    },
+    {
+      "id": 13,
+      "key": "naturalist",
+      "name": "Naturalista",
+      "description": "Reduz o tempo de recuperação natural de seus pontos de vida, mana e estamina, fazendo que se regenere mais rapidamente.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        150,
+        300,
+        375,
+        450,
+        525,
+        600
+      ],
+      "bonuses": [
+        10.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        40.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/13.png",
+      "spritePathId": 54623,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/13.png"
+    },
+    {
+      "id": 14,
+      "key": "artisan",
+      "name": "Artesão",
+      "description": "Aumenta a quantidade de itens produzidos em todas as magias de criação, como por exemplo, magias de criação de flechas.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        45,
+        90,
+        112,
+        135,
+        158,
+        180
+      ],
+      "bonuses": [
+        100.0,
+        200.0,
+        250.0,
+        300.0,
+        350.0,
+        400.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/14.png",
+      "spritePathId": 54815,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/14.png"
+    },
+    {
+      "id": 15,
+      "key": "rushed",
+      "name": "Apressado",
+      "description": "Reduz o tempo de cooldown (para usar habilidades de mesma categoria) de suas magias e itens, possibilitando combos de magias mais rápidos.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        45,
+        90,
+        112,
+        135,
+        158,
+        180
+      ],
+      "bonuses": [
+        20.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/15.png",
+      "spritePathId": 54810,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/15.png"
+    },
+    {
+      "id": 16,
+      "key": "stamina_leech",
+      "name": "Drenar Stamina",
+      "description": "Seus ataques drenam uma quantia de pontos de stamina de seu oponente para seus próprios pontos de stamina.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        185,
+        370,
+        462,
+        555,
+        648,
+        740
+      ],
+      "bonuses": [
+        1.0,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/16.png",
+      "spritePathId": 54951,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/16.png"
+    },
+    {
+      "id": 17,
+      "key": "expert",
+      "name": "Especialista",
+      "description": "Acelera o ganho de experiência para evolução de seus itens, fazendo com que eles subam de nível mais rapidamente.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        125,
+        250,
+        312,
+        375,
+        438,
+        500
+      ],
+      "bonuses": [
+        75.0,
+        150.0,
+        187.5,
+        225.0,
+        262.5,
+        300.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/17.png",
+      "spritePathId": 54877,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/17.png"
+    },
+    {
+      "id": 18,
+      "key": "alchemist",
+      "name": "Alquimista",
+      "description": "Aumenta a potência de suas poções, fazendo com que recuperem mais vida, mana e estamina do que o normal.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        75,
+        150,
+        188,
+        225,
+        262,
+        300
+      ],
+      "bonuses": [
+        25.0,
+        50.0,
+        62.5,
+        75.0,
+        87.5,
+        100.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/18.png",
+      "spritePathId": 54683,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/18.png"
+    },
+    {
+      "id": 19,
+      "key": "athlete",
+      "name": "Atleta",
+      "description": "Acelera a evolução de seus atributos (corpo a corpo, magia, distância, escudaria ou adestramento), fazendo com que eles subam de nível mais rapidamente.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        145,
+        290,
+        362,
+        435,
+        508,
+        580
+      ],
+      "bonuses": [
+        10.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        40.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/19.png",
+      "spritePathId": 54854,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/19.png"
+    },
+    {
+      "id": 20,
+      "key": "precision",
+      "name": "Precisão",
+      "description": "Aumenta a chance de desferir acertos críticos.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        105,
+        210,
+        262,
+        315,
+        368,
+        420
+      ],
+      "bonuses": [
+        25.0,
+        50.0,
+        62.5,
+        75.0,
+        87.5,
+        100.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/20.png",
+      "spritePathId": 54963,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/20.png"
+    },
+    {
+      "id": 21,
+      "key": "lethality",
+      "name": "Letalidade",
+      "description": "Aumenta o total de dano causado por seus ataques críticos.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        85,
+        170,
+        212,
+        255,
+        298,
+        340
+      ],
+      "bonuses": [
+        25.0,
+        50.0,
+        62.5,
+        75.0,
+        87.5,
+        100.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/21.png",
+      "spritePathId": 54735,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/21.png"
+    },
+    {
+      "id": 22,
+      "key": "mana",
+      "name": "Mana",
+      "description": "Causa um aumento nos pontos de mana do personagem.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        75,
+        150,
+        188,
+        225,
+        262,
+        300
+      ],
+      "bonuses": [
+        2.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/22.png",
+      "spritePathId": 54953,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/22.png"
+    },
+    {
+      "id": 23,
+      "key": "stamina",
+      "name": "Estamina",
+      "description": "Causa um aumento nos pontos de estamina do personagem.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        75,
+        150,
+        188,
+        225,
+        262,
+        300
+      ],
+      "bonuses": [
+        2.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/23.png",
+      "spritePathId": 54702,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/23.png"
+    },
+    {
+      "id": 24,
+      "key": "jeweler",
+      "name": "Joalheiro",
+      "description": "Aumenta a quantidade de encantamentos repetidos em slots de itens que fazem efeito quando vestidos/equipados. Por padrão, apenas cinco fazem efeito ao mesmo tempo, mas com este sigilo, você pode aumentar esse limite.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        185,
+        370,
+        462,
+        555,
+        648,
+        740
+      ],
+      "bonuses": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0
+      ],
+      "isPercentage": false,
+      "icon": "sigils_icons/official/24.png",
+      "spritePathId": 55001,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/24.png"
+    },
+    {
+      "id": 25,
+      "key": "negotiator",
+      "name": "Negociador",
+      "description": "Reduz a quantidade de materiais necessários para encantar itens.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        200,
+        400,
+        500,
+        600,
+        700,
+        800
+      ],
+      "bonuses": [
+        10.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        40.0
+      ],
+      "isPercentage": true,
+      "icon": "sigils_icons/official/25.png",
+      "spritePathId": 54742,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/25.png"
+    },
+    {
+      "id": 26,
+      "key": "repairer",
+      "name": "Reparador",
+      "description": "Aumenta a taxa de restituição de materiais ao remover encantamentos não-premium.",
+      "descriptionStatus": "official-wiki",
+      "nameStatus": "official-wiki",
+      "costs": [
+        135,
+        270,
+        338,
+        405,
+        472,
+        540
+      ],
+      "bonuses": [
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0
+      ],
+      "isPercentage": false,
+      "icon": "sigils_icons/official/26.png",
+      "spritePathId": 54672,
+      "costStatus": "official-wiki-rankProgression",
+      "bonusStatus": "official-wiki-rankProgression",
+      "officialIconUrl": "https://grindhero.online/game-data/icons/sigils/26.png"
+    }
+  ]
+}
