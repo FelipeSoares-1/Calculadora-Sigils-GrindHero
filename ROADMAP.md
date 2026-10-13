@@ -11,6 +11,7 @@ A wiki oficial forneceu os dados complementares: https://grindhero.online/pt/wik
 - Catálogo único compartilhado entre web e Python.
 - Build e testes aprovados; revisão visual web desktop/mobile concluída.
 
-Nenhuma instalação do jogo é necessária. Não foi realizado merge automático. O deploy é automático via integração GitHub–Discloud quando a branch acompanhada é atualizada. As alterações foram enviadas à branch do PR; o estado da publicação não foi verificado na integração.
+Nenhuma instalação do jogo é necessária. PR #1 integrado à master em 13/10/2026 (merge e4722e1). Deploy automático GitHub–Discloud confirmado por resposta HTTP do domínio público contendo 26 Sigils e main.obfuscated.js?v=5.
 
 Melhoria futura opcional: validar a execução gráfica da versão Python em um ambiente com customtkinter/Pillow instalados. A versão web distribuída foi exercitada nesta atualização.
+

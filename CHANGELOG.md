@@ -40,3 +40,8 @@ Implementação enviada para a branch `codex/atualizacao-sigils-26`; PR pronto p
 ### Correção do registro de publicação
 
 Em 13/10/2026, a documentação foi corrigida para refletir o deploy automático GitHub–Discloud e remover a orientação de upload manual. A afirmação anterior de ausência de publicação foi substituída pelo estado verificável: alterações enviadas à branch do PR, sem merge e sem confirmação do resultado do deploy.
+
+### Integração e deploy confirmados
+
+Em 13/10/2026, o PR #1 foi integrado à branch principal master pelo commit e4722e1f78f3b9d96a1bb6fbb0a683942fa37898, a pedido do mantenedor. Após a integração, uma consulta HTTP sem cache a https://sigils.redskull.space/ confirmou o HTML com 26 Sigils e a referência ao bundle main.obfuscated.js?v=5. O deploy automático passou a entregar a atualização. Os estados de PR aberto/sem merge descritos acima são registros históricos anteriores à integração.
+
